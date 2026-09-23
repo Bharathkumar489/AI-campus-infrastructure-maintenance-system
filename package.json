@@ -11,6 +11,16 @@
     "seed": "node server/db/seed.js",
     "test": "node server/test_all.js"
   },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.3.0",
+    "sql.js": "^1.14.2",
+    "uuid": "^14.0.2"
+  },
   "keywords": [
     "campus-maintenance",
     "predictive-maintenance",
