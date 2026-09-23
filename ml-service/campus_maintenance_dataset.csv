@@ -1,0 +1,1201 @@
+asset_id,asset_type,building,criticality,asset_age_years,previous_failures,days_since_maintenance,maintenance_count_12m,complaints_30d,severity,usage_hours_day,failure_next_30d
+AST-0001,Civil,Block C,Critical,4.1,1,168,4,0,3,23.8,1
+AST-0002,Plumbing,Science Block,High,4.3,1,202,0,1,5,9.3,0
+AST-0003,Plumbing,Auditorium,High,9.4,5,19,3,1,4,5.2,1
+AST-0004,Furniture,Block B,Medium,5.7,2,50,0,1,3,4.8,0
+AST-0005,Lab Equipment,Block A,High,5.9,4,84,2,1,2,22.2,1
+AST-0006,Electrical,Block A,Low,3.7,3,53,2,0,1,13.5,0
+AST-0007,Furniture,Auditorium,High,0.7,0,304,1,0,5,20,0
+AST-0008,HVAC,Block A,Medium,7.1,3,292,4,0,2,4.4,1
+AST-0009,HVAC,Girls Hostel,Critical,6.3,4,108,0,1,1,19.4,1
+AST-0010,Electrical,Block A,Low,1.1,2,273,4,1,3,8.6,0
+AST-0011,Plumbing,Block B,Medium,5,2,255,0,0,5,14.2,1
+AST-0012,Elevator,Block B,Critical,1,1,110,3,1,5,15.2,1
+AST-0013,Security/CCTV,Boys Hostel,High,2.6,3,185,1,0,2,22.7,1
+AST-0014,Electrical,Boys Hostel,High,5.2,3,159,2,0,1,23,1
+AST-0015,Furniture,Main Library,Low,8.1,3,48,2,1,5,23.5,1
+AST-0016,HVAC,Science Block,Low,7.2,3,198,4,1,4,6.9,1
+AST-0017,Lab Equipment,Block B,High,8.4,4,99,0,0,1,20.4,1
+AST-0018,HVAC,Science Block,Medium,7.4,2,49,2,1,1,11.4,0
+AST-0019,Security/CCTV,Block A,High,6.9,3,16,0,1,1,9.4,1
+AST-0020,Furniture,Auditorium,High,5,3,242,0,1,1,14.5,1
+AST-0021,HVAC,Block A,High,6.1,3,278,2,2,4,22.5,1
+AST-0022,HVAC,Block C,Low,3.7,2,208,1,0,3,21.1,1
+AST-0023,Plumbing,Block A,Medium,1.9,0,112,0,0,3,17,0
+AST-0024,Elevator,Girls Hostel,Critical,6.1,4,58,1,0,1,6.4,1
+AST-0025,Civil,Girls Hostel,Medium,5.9,4,51,2,0,4,22.8,1
+AST-0026,Electrical,Girls Hostel,High,4.7,2,18,3,1,5,20.7,0
+AST-0027,HVAC,Boys Hostel,Critical,8.5,6,345,1,0,3,12.7,1
+AST-0028,Plumbing,Block C,Low,2.1,1,175,1,0,4,6.1,0
+AST-0029,Furniture,Girls Hostel,High,0.9,0,173,0,1,4,10.9,1
+AST-0030,Civil,Science Block,Low,3.6,0,124,1,0,4,16.9,1
+AST-0031,Civil,Main Library,Low,1,0,186,3,2,5,22.7,1
+AST-0032,Electrical,Auditorium,Medium,4.7,3,152,2,1,2,16.9,1
+AST-0033,HVAC,Block B,Medium,2.5,0,145,0,0,4,16.8,1
+AST-0034,Civil,Main Library,Medium,4.5,2,227,2,0,1,15.6,0
+AST-0035,Civil,Block A,Low,5.9,2,84,0,2,5,21.2,1
+AST-0036,Elevator,Girls Hostel,Low,9.5,6,233,1,0,5,8.2,0
+AST-0037,Lab Equipment,Block B,High,9.1,5,273,1,0,1,18.4,1
+AST-0038,Furniture,Boys Hostel,Low,4.9,2,357,1,0,1,16.5,1
+AST-0039,Lab Equipment,Block B,Medium,6.7,4,20,2,0,1,21.2,1
+AST-0040,HVAC,Science Block,Medium,3,2,301,2,0,1,19.6,1
+AST-0041,Electrical,Science Block,Critical,5.3,4,48,3,0,3,5,0
+AST-0042,HVAC,Block B,Low,4.1,1,290,0,0,5,8.8,0
+AST-0043,Plumbing,Block A,High,2.5,0,36,3,1,1,4.6,1
+AST-0044,Electrical,Block A,High,9.9,5,327,1,0,2,23.3,1
+AST-0045,HVAC,Boys Hostel,Low,6.3,3,78,1,0,3,18.4,1
+AST-0046,Lab Equipment,Main Library,Medium,8.6,4,214,1,3,3,5.2,1
+AST-0047,Furniture,Block C,Medium,9.4,3,19,3,2,4,9.3,1
+AST-0048,HVAC,Block B,Medium,5.7,3,82,4,1,1,18.6,1
+AST-0049,Security/CCTV,Girls Hostel,Low,7,3,100,0,0,3,18.1,1
+AST-0050,Furniture,Main Library,Low,6.9,3,50,2,0,4,14.4,0
+AST-0051,Lab Equipment,Block B,Low,2.7,0,78,4,0,2,6.5,0
+AST-0052,Elevator,Girls Hostel,Critical,8.4,5,353,2,0,3,5.7,1
+AST-0053,Electrical,Block B,Low,5,2,274,4,2,5,4.5,0
+AST-0054,Furniture,Girls Hostel,High,4.9,4,134,3,0,2,13.4,0
+AST-0055,Plumbing,Block B,Medium,5.8,2,128,3,0,5,21.8,0
+AST-0056,Elevator,Girls Hostel,Critical,6.4,5,212,3,2,3,18.9,1
+AST-0057,Security/CCTV,Girls Hostel,Medium,7.4,3,148,2,1,3,16.3,0
+AST-0058,Elevator,Boys Hostel,Low,5.3,2,280,4,1,3,18.9,1
+AST-0059,Civil,Boys Hostel,Low,3.2,1,200,2,1,4,16.2,1
+AST-0060,Lab Equipment,Science Block,High,9.9,4,224,3,1,2,16.5,1
+AST-0061,Furniture,Science Block,High,1.7,2,69,2,0,3,23.7,1
+AST-0062,Furniture,Science Block,Critical,7.9,5,72,0,2,2,5.2,1
+AST-0063,Security/CCTV,Main Library,Critical,3.1,1,302,3,1,3,6.4,1
+AST-0064,HVAC,Main Library,Critical,4.4,3,44,2,0,3,4.1,1
+AST-0065,Plumbing,Block A,High,4.5,3,262,3,2,4,9.1,1
+AST-0066,Security/CCTV,Science Block,Medium,8.7,3,28,1,0,2,4.7,1
+AST-0067,Electrical,Block C,High,7.9,4,50,1,0,1,18.2,1
+AST-0068,Lab Equipment,Boys Hostel,Low,9.1,3,28,4,0,5,7.3,1
+AST-0069,Plumbing,Science Block,Medium,0.6,1,105,1,1,4,19.6,1
+AST-0070,Civil,Block B,Medium,0.5,0,168,0,1,1,16.1,0
+AST-0071,Security/CCTV,Girls Hostel,Low,5.5,3,212,4,1,5,15.6,1
+AST-0072,Elevator,Girls Hostel,Medium,7.6,2,217,2,0,5,15.6,1
+AST-0073,Electrical,Boys Hostel,Low,2.7,1,238,1,1,2,8.7,1
+AST-0074,Lab Equipment,Main Library,High,3.4,2,157,2,0,2,9.3,0
+AST-0075,Civil,Boys Hostel,High,4.2,3,333,3,0,4,13.6,1
+AST-0076,Plumbing,Boys Hostel,Medium,6.8,3,57,4,2,4,12.7,0
+AST-0077,Plumbing,Auditorium,Medium,9.2,4,10,1,0,4,14,0
+AST-0078,Plumbing,Girls Hostel,High,3.6,2,242,1,1,4,23.3,0
+AST-0079,Security/CCTV,Boys Hostel,Low,8.1,5,38,1,0,2,11.8,1
+AST-0080,Electrical,Block A,High,2.4,3,20,2,0,2,13.1,0
+AST-0081,Furniture,Main Library,Critical,1.8,2,120,1,0,3,6.2,0
+AST-0082,Lab Equipment,Science Block,Critical,3,3,307,3,0,2,7.9,1
+AST-0083,Elevator,Girls Hostel,Critical,7.2,3,157,1,0,4,11.3,1
+AST-0084,Elevator,Boys Hostel,Medium,8.3,6,283,2,1,2,8.8,0
+AST-0085,Elevator,Girls Hostel,Low,1.9,1,238,0,0,3,20.1,0
+AST-0086,Plumbing,Block A,Medium,9.9,5,165,2,0,5,13.6,1
+AST-0087,Elevator,Science Block,Critical,3.1,1,119,3,0,2,4.5,0
+AST-0088,Furniture,Boys Hostel,Medium,4.4,2,120,4,0,5,14.5,1
+AST-0089,Elevator,Block B,Critical,3.4,1,191,0,0,3,23.8,0
+AST-0090,Electrical,Block B,Critical,5.9,3,316,1,0,2,8.7,1
+AST-0091,Civil,Main Library,Medium,4.2,1,116,1,0,4,5.2,0
+AST-0092,Civil,Science Block,Critical,0.7,0,178,1,1,2,17.2,1
+AST-0093,Elevator,Boys Hostel,Medium,3.2,0,349,1,1,1,22,1
+AST-0094,Furniture,Boys Hostel,Low,0.9,1,20,3,0,3,20.8,0
+AST-0095,Lab Equipment,Block C,High,3.9,1,308,3,1,1,16.9,0
+AST-0096,Plumbing,Main Library,High,2.7,0,79,4,0,1,12.8,0
+AST-0097,Electrical,Science Block,High,10,5,40,0,1,5,20.4,1
+AST-0098,Electrical,Block A,High,1.9,1,170,4,0,4,16.1,1
+AST-0099,Security/CCTV,Science Block,Critical,7.2,3,332,3,0,1,8.3,0
+AST-0100,Elevator,Block A,Critical,4.1,3,347,0,0,1,11.2,1
+AST-0101,Civil,Block B,Low,0.5,0,152,3,1,1,22.3,1
+AST-0102,Elevator,Block C,Low,4,3,20,3,1,4,16.1,1
+AST-0103,Civil,Auditorium,Medium,1.3,2,340,2,0,4,19.9,0
+AST-0104,Furniture,Main Library,High,3.2,2,313,2,0,5,15,1
+AST-0105,Elevator,Main Library,Critical,1.7,2,231,0,0,2,5.6,0
+AST-0106,Civil,Girls Hostel,Medium,5,3,54,1,1,4,23.4,1
+AST-0107,Security/CCTV,Block B,Medium,3.7,1,255,2,4,3,23.1,1
+AST-0108,Civil,Auditorium,Critical,1.8,1,77,2,0,3,21,0
+AST-0109,Electrical,Boys Hostel,Medium,1.5,0,350,3,1,4,5.3,1
+AST-0110,HVAC,Main Library,Medium,4.6,1,124,1,0,2,4.5,1
+AST-0111,Plumbing,Block B,High,5.6,3,143,0,1,5,11.6,1
+AST-0112,HVAC,Boys Hostel,Critical,2.1,0,314,2,0,1,13.5,1
+AST-0113,Lab Equipment,Main Library,High,9.5,6,136,2,1,2,19.9,1
+AST-0114,Furniture,Block B,Critical,1.5,0,77,4,1,4,22.9,0
+AST-0115,Elevator,Block B,Medium,2.6,2,77,0,0,3,20.3,1
+AST-0116,Plumbing,Science Block,Medium,0.6,1,203,4,1,1,6.5,1
+AST-0117,Lab Equipment,Block C,High,0.5,0,174,2,1,1,4.3,1
+AST-0118,Civil,Auditorium,Low,0.6,0,31,4,1,4,15.6,1
+AST-0119,Lab Equipment,Auditorium,Low,6.4,4,202,2,2,2,6.2,1
+AST-0120,Lab Equipment,Girls Hostel,Critical,3.6,2,298,0,2,3,11.4,1
+AST-0121,Lab Equipment,Block B,Critical,9.3,6,242,3,0,3,12.2,1
+AST-0122,Furniture,Science Block,Low,9.9,6,340,1,0,2,9.6,1
+AST-0123,Security/CCTV,Block A,High,5.7,3,319,0,0,5,16.7,1
+AST-0124,Electrical,Girls Hostel,Low,0.5,0,67,2,0,4,23.3,1
+AST-0125,Furniture,Auditorium,Medium,2.9,1,119,1,0,5,11.1,1
+AST-0126,Furniture,Girls Hostel,High,5.4,3,49,3,0,1,17.8,1
+AST-0127,Elevator,Science Block,High,2.6,1,164,2,1,1,12.4,1
+AST-0128,Civil,Block C,High,8.9,4,119,2,1,4,14.4,1
+AST-0129,Plumbing,Boys Hostel,Medium,2.8,1,278,2,1,4,10.4,1
+AST-0130,Electrical,Girls Hostel,High,8.5,4,27,4,0,5,20.9,1
+AST-0131,Elevator,Block B,Low,2.9,0,125,1,0,4,15.9,1
+AST-0132,Furniture,Block B,Critical,6.5,5,68,0,0,3,14.1,1
+AST-0133,Electrical,Girls Hostel,Medium,1.3,1,36,3,0,3,9.4,0
+AST-0134,Elevator,Main Library,Low,7.3,3,92,4,0,5,6.7,1
+AST-0135,Plumbing,Block B,High,0.8,0,305,3,0,5,21.5,1
+AST-0136,Plumbing,Girls Hostel,Critical,7.4,3,44,1,0,2,14.9,1
+AST-0137,Lab Equipment,Block A,Low,6.1,2,223,2,0,4,11.2,1
+AST-0138,Furniture,Block B,Low,2.3,1,337,3,0,4,15.9,0
+AST-0139,Security/CCTV,Boys Hostel,High,1.1,0,82,0,0,4,9.5,0
+AST-0140,HVAC,Main Library,Medium,4.4,2,100,1,2,5,18.5,0
+AST-0141,Civil,Science Block,Medium,9.4,3,181,1,2,5,23.3,1
+AST-0142,Plumbing,Block A,Medium,9.7,6,121,3,0,3,18.9,1
+AST-0143,Security/CCTV,Block C,Critical,2.2,2,158,0,0,3,16.4,1
+AST-0144,HVAC,Block B,High,3.2,1,103,1,1,5,14.9,1
+AST-0145,Lab Equipment,Block A,Low,7,5,57,1,0,5,18,1
+AST-0146,Security/CCTV,Girls Hostel,Medium,0.7,0,60,3,0,2,22.5,1
+AST-0147,HVAC,Boys Hostel,Critical,8.2,3,22,2,0,1,13.7,1
+AST-0148,Plumbing,Science Block,High,9.6,4,62,3,1,4,10.4,1
+AST-0149,HVAC,Girls Hostel,Low,1,0,134,4,0,3,4.1,1
+AST-0150,Elevator,Girls Hostel,High,9.4,4,299,2,1,5,14.3,1
+AST-0151,Lab Equipment,Main Library,Critical,2.2,2,17,2,1,3,21.5,1
+AST-0152,Electrical,Block A,Low,6.3,4,146,0,0,1,11.2,0
+AST-0153,Lab Equipment,Block A,Medium,2.5,1,288,4,0,1,16.3,0
+AST-0154,HVAC,Auditorium,Critical,8.4,4,87,4,0,1,9.9,1
+AST-0155,Civil,Block C,Critical,1.8,0,224,0,0,3,21.8,1
+AST-0156,Civil,Boys Hostel,Low,3.3,2,200,2,0,2,14.7,1
+AST-0157,Furniture,Block A,High,5.7,4,196,4,0,4,22.4,1
+AST-0158,Civil,Main Library,Critical,6.8,2,356,0,2,5,6.4,1
+AST-0159,Elevator,Boys Hostel,Low,1.5,0,97,1,1,3,12.8,0
+AST-0160,Electrical,Science Block,Low,9.9,6,294,2,0,3,19.6,1
+AST-0161,Civil,Block C,Medium,1,0,298,0,0,1,23.8,0
+AST-0162,Lab Equipment,Main Library,Critical,8.9,6,349,0,0,5,11.6,1
+AST-0163,Civil,Block C,Medium,2.8,2,168,0,1,3,14,1
+AST-0164,Security/CCTV,Block B,High,5.5,4,185,0,0,4,6.2,0
+AST-0165,Electrical,Science Block,High,4.2,3,17,4,0,5,13.1,1
+AST-0166,Elevator,Block A,High,7.6,5,221,1,2,2,18.5,1
+AST-0167,Security/CCTV,Block C,High,4.2,3,62,4,2,2,19.7,0
+AST-0168,Lab Equipment,Block A,High,6.3,2,108,1,1,5,12.9,1
+AST-0169,Security/CCTV,Block A,High,9.7,6,338,1,1,3,10.3,1
+AST-0170,Lab Equipment,Block C,Medium,5.6,3,222,3,1,2,6.5,1
+AST-0171,Furniture,Block C,High,7.7,3,105,2,1,2,18.2,0
+AST-0172,Electrical,Block C,High,3.9,3,246,2,0,2,22.9,1
+AST-0173,Plumbing,Block A,High,1.5,2,262,1,0,5,20.4,1
+AST-0174,Security/CCTV,Block A,Critical,8.3,5,285,4,0,4,12,1
+AST-0175,Civil,Block A,High,3.7,1,350,1,0,3,9.3,0
+AST-0176,Plumbing,Block C,Low,0.5,0,116,1,0,4,13,1
+AST-0177,Electrical,Boys Hostel,Medium,3,3,114,1,0,5,17.8,1
+AST-0178,Plumbing,Main Library,Critical,7,2,235,0,0,5,16,1
+AST-0179,Electrical,Main Library,Medium,2.1,1,346,4,0,2,20.9,1
+AST-0180,Plumbing,Main Library,Medium,6.7,3,297,0,1,5,23.7,1
+AST-0181,Security/CCTV,Block A,Medium,8.9,6,179,3,0,5,7.7,1
+AST-0182,Plumbing,Science Block,Low,4.2,3,17,2,1,1,8.3,1
+AST-0183,Furniture,Block A,High,1.7,1,75,4,0,2,8.6,0
+AST-0184,Civil,Boys Hostel,Medium,9.5,6,52,3,0,3,10.8,1
+AST-0185,Furniture,Science Block,Low,6,2,116,1,0,4,8.3,1
+AST-0186,Electrical,Block A,Medium,4.1,2,44,3,0,4,17,0
+AST-0187,Civil,Auditorium,Critical,2,0,137,4,1,5,12.3,0
+AST-0188,Security/CCTV,Auditorium,Low,0.9,0,146,4,0,4,5.5,0
+AST-0189,Security/CCTV,Auditorium,Low,2.7,3,291,0,0,2,8.1,0
+AST-0190,Civil,Block C,Low,1.8,1,252,3,0,4,23.1,0
+AST-0191,Civil,Block B,Medium,7.5,5,348,3,0,2,4.4,0
+AST-0192,Furniture,Block A,Medium,9.3,6,252,2,0,1,20.2,1
+AST-0193,Plumbing,Block C,High,9.6,5,114,2,2,1,9,1
+AST-0194,Elevator,Girls Hostel,Medium,8.1,5,292,4,1,4,21.9,1
+AST-0195,HVAC,Auditorium,High,7.6,4,338,4,1,5,12.2,1
+AST-0196,Electrical,Boys Hostel,Low,7,3,64,3,0,4,16.3,1
+AST-0197,Elevator,Main Library,Medium,6.9,3,97,0,2,4,16.1,1
+AST-0198,Plumbing,Science Block,Low,9.8,5,131,0,0,1,8.7,0
+AST-0199,HVAC,Block A,Medium,6.8,3,77,1,1,1,13.2,1
+AST-0200,Elevator,Block B,Low,7.7,3,19,4,0,5,13.9,1
+AST-0201,Lab Equipment,Girls Hostel,Low,6.7,3,293,4,1,4,19.6,1
+AST-0202,Elevator,Boys Hostel,High,7.3,3,194,3,2,1,13.2,1
+AST-0203,Plumbing,Girls Hostel,Medium,7.2,5,181,4,0,4,10.2,1
+AST-0204,Lab Equipment,Auditorium,High,4.5,3,194,3,0,2,6.9,0
+AST-0205,Elevator,Auditorium,Critical,6.6,2,93,0,1,4,13.4,0
+AST-0206,Civil,Block C,Low,5,3,118,2,1,2,18.5,1
+AST-0207,Civil,Main Library,Medium,9,6,50,3,0,3,9.6,0
+AST-0208,Lab Equipment,Boys Hostel,High,8.1,3,180,3,1,2,23,1
+AST-0209,Security/CCTV,Block B,Low,0.6,0,284,2,1,2,14.3,1
+AST-0210,HVAC,Block C,Low,8,3,91,2,1,4,9.8,1
+AST-0211,Furniture,Main Library,Critical,6.3,3,144,4,0,2,7.9,1
+AST-0212,Lab Equipment,Main Library,Low,8.5,4,340,0,0,2,11.7,1
+AST-0213,Furniture,Girls Hostel,Medium,5.7,2,54,1,0,3,15.2,1
+AST-0214,Security/CCTV,Block C,Medium,4.4,3,115,2,1,2,16.9,0
+AST-0215,Lab Equipment,Auditorium,High,3.2,1,50,1,0,4,18,0
+AST-0216,HVAC,Boys Hostel,High,7.3,5,289,4,0,5,7.5,0
+AST-0217,Lab Equipment,Boys Hostel,Medium,5.3,3,19,4,0,3,6,1
+AST-0218,Civil,Science Block,Medium,1.1,0,327,3,2,3,22.5,1
+AST-0219,Lab Equipment,Main Library,Low,6.6,5,162,4,0,5,13.8,1
+AST-0220,Lab Equipment,Science Block,High,8.8,4,116,3,1,2,18.6,1
+AST-0221,Electrical,Science Block,High,5.6,4,54,0,1,1,14.4,1
+AST-0222,HVAC,Boys Hostel,High,9.2,4,172,2,0,3,9.4,1
+AST-0223,Civil,Girls Hostel,Critical,3.4,3,184,3,1,4,16.4,1
+AST-0224,Lab Equipment,Block A,Low,7.7,3,353,2,0,3,4.5,1
+AST-0225,Security/CCTV,Boys Hostel,High,4.1,1,44,4,1,5,13.9,0
+AST-0226,Lab Equipment,Block A,Critical,7.4,4,334,1,0,2,23.9,1
+AST-0227,Security/CCTV,Girls Hostel,Low,0.5,0,262,4,0,4,18.6,1
+AST-0228,HVAC,Boys Hostel,Critical,9.7,4,186,3,1,1,19.6,1
+AST-0229,HVAC,Science Block,Low,9.1,4,76,4,1,2,15.4,1
+AST-0230,Plumbing,Block C,High,2.7,0,352,0,0,3,21.9,1
+AST-0231,Plumbing,Boys Hostel,Low,6.5,4,93,1,0,3,13.2,1
+AST-0232,Furniture,Main Library,High,6.6,2,60,3,0,2,16.2,1
+AST-0233,Electrical,Boys Hostel,Critical,3.6,2,192,2,0,1,7.6,1
+AST-0234,Elevator,Science Block,Medium,7.2,5,264,0,0,3,21.5,1
+AST-0235,HVAC,Main Library,Low,1.8,1,139,1,1,1,5,1
+AST-0236,Lab Equipment,Block B,High,4.9,3,273,4,0,4,5.1,1
+AST-0237,Civil,Main Library,Critical,7.7,4,329,3,1,2,23.1,1
+AST-0238,HVAC,Block B,High,6.7,3,311,0,0,2,10.6,1
+AST-0239,Lab Equipment,Main Library,Low,1.5,0,220,3,1,1,8.2,1
+AST-0240,Civil,Block A,Critical,2.6,2,173,2,0,2,22.9,1
+AST-0241,Electrical,Boys Hostel,Medium,3.9,1,177,4,1,3,6.4,0
+AST-0242,Civil,Auditorium,High,1,1,22,1,0,3,5.6,0
+AST-0243,Furniture,Girls Hostel,Critical,1.1,0,269,4,2,4,8.7,1
+AST-0244,Civil,Science Block,High,7.1,3,158,2,0,5,10.4,1
+AST-0245,Security/CCTV,Girls Hostel,Low,6.7,4,270,2,0,2,18.6,0
+AST-0246,Plumbing,Science Block,High,0.5,0,170,1,0,1,13.3,0
+AST-0247,Furniture,Girls Hostel,Medium,6.8,3,29,3,2,2,17.6,1
+AST-0248,HVAC,Science Block,Critical,6,3,86,3,0,3,14.3,1
+AST-0249,Civil,Auditorium,Critical,1.6,2,307,2,0,3,5.4,0
+AST-0250,Lab Equipment,Main Library,High,7.9,5,42,4,1,2,21.1,1
+AST-0251,Civil,Main Library,Critical,1.7,2,255,1,1,2,19,0
+AST-0252,Elevator,Block C,Low,2.7,0,337,2,0,3,18,1
+AST-0253,Security/CCTV,Science Block,Low,3.7,1,270,3,2,3,16.7,1
+AST-0254,Security/CCTV,Main Library,Low,0.5,0,103,4,0,5,22.9,1
+AST-0255,Plumbing,Auditorium,Low,1.9,2,292,4,0,3,7.7,0
+AST-0256,HVAC,Block A,Low,1.7,1,248,0,0,1,5.5,0
+AST-0257,Elevator,Block C,Medium,1,0,148,2,0,1,19.1,0
+AST-0258,HVAC,Boys Hostel,Critical,8.3,3,35,3,0,1,21.8,1
+AST-0259,Elevator,Science Block,Low,3.9,2,258,1,1,5,5.8,1
+AST-0260,Lab Equipment,Main Library,Critical,2.6,1,317,4,0,2,12.7,1
+AST-0261,Plumbing,Block B,Low,1.4,1,28,3,0,5,10.5,0
+AST-0262,Plumbing,Boys Hostel,High,7.6,4,346,3,2,1,9,1
+AST-0263,Lab Equipment,Auditorium,High,4.3,2,222,1,1,5,14.8,1
+AST-0264,HVAC,Block C,Critical,6.5,2,168,3,1,3,8.2,1
+AST-0265,Elevator,Block A,Critical,5.4,1,279,0,0,5,20.4,1
+AST-0266,Security/CCTV,Auditorium,High,9.8,4,27,3,0,3,7.7,1
+AST-0267,Plumbing,Block A,Critical,6.4,4,353,1,1,4,18.1,1
+AST-0268,Civil,Block A,High,7.3,5,208,0,1,4,9.1,1
+AST-0269,Furniture,Girls Hostel,Low,1.5,0,63,1,0,1,16.2,1
+AST-0270,Plumbing,Block B,Critical,1.3,1,23,1,0,5,4.7,1
+AST-0271,Security/CCTV,Block C,Medium,8.3,3,98,3,1,3,15,0
+AST-0272,Civil,Main Library,Critical,5.8,3,266,2,1,3,12.1,1
+AST-0273,Elevator,Science Block,Medium,4.5,1,275,1,0,5,13.6,1
+AST-0274,Furniture,Block C,Low,7,2,40,0,0,5,21.4,0
+AST-0275,Furniture,Girls Hostel,Medium,4.5,3,272,0,0,3,15.8,1
+AST-0276,Civil,Block B,Critical,3.6,3,158,3,0,2,11.9,1
+AST-0277,HVAC,Block A,Medium,3.5,2,199,4,1,1,14.9,1
+AST-0278,Plumbing,Block B,Low,9.2,5,284,1,1,5,22.7,1
+AST-0279,Civil,Auditorium,Low,5.5,3,42,4,1,1,18.7,1
+AST-0280,Civil,Science Block,High,0.6,0,256,0,0,4,23.1,0
+AST-0281,Elevator,Girls Hostel,Low,9.7,3,323,3,1,4,10.2,1
+AST-0282,Furniture,Girls Hostel,Critical,4.5,3,52,3,1,1,10.2,0
+AST-0283,Electrical,Boys Hostel,Critical,4.4,2,99,2,0,4,9.6,0
+AST-0284,Plumbing,Block C,Medium,1.1,0,179,0,1,2,14,1
+AST-0285,Electrical,Main Library,Medium,9.5,5,293,4,1,5,21.5,1
+AST-0286,Lab Equipment,Block C,Low,7.4,5,189,4,0,4,6.7,0
+AST-0287,Furniture,Auditorium,High,8.5,3,69,4,0,5,9.7,0
+AST-0288,Civil,Girls Hostel,Critical,1.3,1,99,2,0,1,20.1,0
+AST-0289,HVAC,Science Block,Medium,8.1,3,38,2,0,4,19.4,1
+AST-0290,Civil,Block C,Critical,3.7,3,24,4,0,3,9.4,0
+AST-0291,Elevator,Boys Hostel,Critical,4.1,3,181,2,1,4,6.7,1
+AST-0292,Civil,Girls Hostel,High,6.4,3,310,4,1,2,20.2,1
+AST-0293,Security/CCTV,Block C,Medium,4.3,2,150,2,1,2,22.8,0
+AST-0294,Elevator,Main Library,Medium,9.1,5,357,2,1,2,19.5,1
+AST-0295,Furniture,Block B,Low,9.2,4,176,4,0,4,16.8,1
+AST-0296,Civil,Block B,Critical,7,4,77,3,1,5,10.3,1
+AST-0297,Electrical,Block B,Critical,9.9,6,53,2,0,1,22,1
+AST-0298,Plumbing,Main Library,Low,1.9,0,48,1,0,4,23.6,0
+AST-0299,Elevator,Block C,High,4,2,137,1,0,5,7.3,0
+AST-0300,Plumbing,Auditorium,Medium,4,2,65,4,1,4,7.4,1
+AST-0301,Security/CCTV,Science Block,Critical,6.9,3,259,2,0,4,14.4,0
+AST-0302,Elevator,Boys Hostel,Low,2.4,0,47,0,1,2,11.9,1
+AST-0303,Civil,Block C,Critical,7.7,4,175,2,0,3,22.5,1
+AST-0304,Electrical,Girls Hostel,High,2.4,0,77,0,1,4,14.8,1
+AST-0305,Security/CCTV,Girls Hostel,Low,8.6,5,131,1,1,4,14.5,1
+AST-0306,HVAC,Girls Hostel,Low,3.9,1,303,2,1,2,13.4,0
+AST-0307,Lab Equipment,Block C,Medium,3.2,2,135,4,2,5,12.5,0
+AST-0308,Elevator,Science Block,Low,1.1,1,77,1,1,5,17,0
+AST-0309,Elevator,Block A,Medium,8.8,5,106,1,0,2,15.7,1
+AST-0310,Elevator,Block B,Critical,9.8,5,19,3,0,5,21.3,1
+AST-0311,Security/CCTV,Auditorium,Critical,8.7,5,131,3,0,5,12.6,1
+AST-0312,Civil,Block A,Critical,2.8,0,230,3,0,3,8.8,0
+AST-0313,HVAC,Block C,Medium,4.3,1,220,0,0,2,5.5,0
+AST-0314,Plumbing,Block A,Critical,5.3,2,178,3,0,4,12.3,1
+AST-0315,Electrical,Main Library,Low,4.2,2,56,1,0,3,10.1,1
+AST-0316,Civil,Science Block,Medium,4.7,1,76,0,0,2,20.2,0
+AST-0317,Furniture,Science Block,Low,6.1,3,17,2,1,4,6.1,1
+AST-0318,Elevator,Main Library,Critical,4.2,1,257,0,0,3,15.7,0
+AST-0319,Civil,Block A,Low,6,2,103,3,0,1,14.4,0
+AST-0320,Security/CCTV,Main Library,Low,3.7,3,275,4,0,3,17.8,1
+AST-0321,Furniture,Main Library,Critical,3.8,3,80,1,1,2,15.4,1
+AST-0322,Plumbing,Boys Hostel,Critical,6.8,4,336,1,0,3,14.3,1
+AST-0323,Lab Equipment,Auditorium,Low,7.3,4,339,4,1,4,22.2,1
+AST-0324,Civil,Boys Hostel,Critical,9.5,4,79,2,0,4,18.6,1
+AST-0325,Civil,Block C,Low,0.5,0,277,4,0,4,6,1
+AST-0326,Plumbing,Girls Hostel,Critical,8.4,3,197,2,0,3,19.7,1
+AST-0327,HVAC,Block C,High,1.6,2,35,2,0,1,17.9,0
+AST-0328,Elevator,Main Library,Critical,6.9,2,168,1,2,5,15.9,1
+AST-0329,Furniture,Boys Hostel,Low,2,1,247,0,0,1,4.9,0
+AST-0330,Electrical,Auditorium,Medium,1.4,0,294,2,0,5,16.5,0
+AST-0331,Security/CCTV,Block C,Low,1.9,2,340,2,2,4,22.4,1
+AST-0332,Elevator,Block C,High,7.3,3,340,4,0,5,13.9,1
+AST-0333,Electrical,Girls Hostel,Low,9.3,5,105,2,0,2,18.2,1
+AST-0334,Plumbing,Block A,High,8.1,3,119,3,0,2,19.5,1
+AST-0335,Lab Equipment,Main Library,High,9.7,4,323,0,0,5,4.6,1
+AST-0336,Furniture,Block C,Medium,9.8,6,97,1,1,5,6.8,0
+AST-0337,HVAC,Auditorium,Medium,8.8,3,228,2,0,3,20.9,1
+AST-0338,Civil,Girls Hostel,Low,2.6,0,119,4,0,5,12,0
+AST-0339,Civil,Girls Hostel,Low,6.4,2,234,2,0,2,4.5,0
+AST-0340,HVAC,Block A,High,8.4,5,154,1,2,3,20.9,1
+AST-0341,Plumbing,Main Library,High,4.7,3,270,2,1,3,10.8,0
+AST-0342,Civil,Block B,Low,3.7,1,53,0,0,1,7.1,0
+AST-0343,Elevator,Main Library,Medium,5.5,3,97,1,2,4,12.2,1
+AST-0344,Lab Equipment,Block A,Critical,6.8,5,99,2,0,3,6.1,1
+AST-0345,Elevator,Block B,Critical,6.5,4,328,2,0,4,20.8,0
+AST-0346,Electrical,Girls Hostel,High,8.4,3,201,2,0,1,9.5,1
+AST-0347,Furniture,Science Block,High,3.3,2,69,1,0,5,16,0
+AST-0348,HVAC,Main Library,Low,6.9,2,38,1,0,4,9.8,1
+AST-0349,Furniture,Science Block,Critical,5.7,4,293,2,0,2,11.8,1
+AST-0350,HVAC,Science Block,Low,8.9,5,337,4,0,1,14,1
+AST-0351,HVAC,Girls Hostel,Critical,8.3,3,268,1,0,2,12.1,1
+AST-0352,Plumbing,Main Library,Low,4.5,3,225,4,1,2,5.1,1
+AST-0353,HVAC,Block C,Critical,5,2,265,3,0,5,5.3,1
+AST-0354,Electrical,Main Library,Medium,8.5,3,339,1,0,2,18,1
+AST-0355,Plumbing,Block B,Medium,2.1,0,18,0,0,3,5.4,0
+AST-0356,Lab Equipment,Auditorium,Critical,7.8,3,252,2,0,1,19.1,1
+AST-0357,Plumbing,Girls Hostel,Medium,3.5,1,159,4,1,3,6.6,1
+AST-0358,Civil,Block C,Critical,9.8,6,16,1,1,5,13.9,1
+AST-0359,Electrical,Girls Hostel,Medium,1.8,1,97,3,1,2,13,0
+AST-0360,Lab Equipment,Block C,Critical,8.5,3,83,3,1,4,17.8,1
+AST-0361,Elevator,Block A,Low,4,1,36,0,0,5,18.8,0
+AST-0362,Plumbing,Boys Hostel,Low,4,3,312,3,0,5,21.3,1
+AST-0363,Civil,Boys Hostel,Critical,1.4,0,25,1,0,5,19,1
+AST-0364,HVAC,Auditorium,Low,2.3,1,72,3,2,5,7.5,0
+AST-0365,Electrical,Block C,Medium,1.7,2,260,3,0,1,6.6,0
+AST-0366,Plumbing,Science Block,Medium,2,1,97,3,0,5,6,1
+AST-0367,HVAC,Block B,High,8.6,3,39,1,2,2,5.5,1
+AST-0368,Lab Equipment,Auditorium,Medium,5,1,107,3,2,4,23.3,0
+AST-0369,Civil,Boys Hostel,Critical,0.7,2,239,0,0,2,23.5,1
+AST-0370,Civil,Block A,Low,8.8,6,83,3,0,2,8.8,0
+AST-0371,Furniture,Boys Hostel,Critical,2.7,2,137,0,0,2,23.2,0
+AST-0372,HVAC,Block A,Medium,7.5,3,306,3,1,3,5.8,1
+AST-0373,Civil,Science Block,Critical,4,1,104,1,0,5,22.3,1
+AST-0374,Security/CCTV,Boys Hostel,Low,9,3,225,2,2,1,13.3,1
+AST-0375,Elevator,Science Block,Medium,9.7,4,293,2,0,2,6.1,1
+AST-0376,Furniture,Block B,High,2.4,2,359,3,0,1,7.7,0
+AST-0377,Plumbing,Science Block,Medium,10,4,237,3,0,3,17.2,1
+AST-0378,HVAC,Block A,Medium,8.8,6,188,0,1,3,12.7,1
+AST-0379,Security/CCTV,Main Library,Low,1,2,290,2,1,3,7.9,1
+AST-0380,Lab Equipment,Block C,Medium,4.6,2,262,4,0,2,4,0
+AST-0381,Plumbing,Girls Hostel,High,10,6,135,1,0,3,11.6,1
+AST-0382,Furniture,Science Block,Low,8.1,3,251,0,0,2,19.6,1
+AST-0383,Security/CCTV,Science Block,Critical,1.4,0,231,1,0,3,22.3,0
+AST-0384,Security/CCTV,Block A,High,8.2,5,329,3,0,1,13.4,1
+AST-0385,Elevator,Main Library,High,8.7,6,237,4,1,2,18.2,0
+AST-0386,Civil,Boys Hostel,Low,7.3,4,50,3,1,2,7.3,0
+AST-0387,Plumbing,Girls Hostel,Low,7.6,2,30,4,0,4,4.4,0
+AST-0388,HVAC,Boys Hostel,Low,3.5,1,129,4,1,2,18.9,1
+AST-0389,Electrical,Boys Hostel,Medium,8.6,4,59,0,1,2,15.3,1
+AST-0390,HVAC,Block B,Medium,6.1,3,266,2,1,3,6.1,1
+AST-0391,Furniture,Auditorium,Critical,4.2,2,64,3,0,4,18.2,1
+AST-0392,Civil,Block B,Medium,3,2,330,4,1,4,9.5,1
+AST-0393,Security/CCTV,Boys Hostel,High,3.7,2,107,2,1,4,6.7,0
+AST-0394,HVAC,Science Block,Critical,9,6,356,0,2,5,11.6,1
+AST-0395,Furniture,Boys Hostel,Medium,2.2,1,344,1,0,1,5.8,0
+AST-0396,Security/CCTV,Block A,Medium,0.7,0,121,3,1,5,5.7,0
+AST-0397,Furniture,Boys Hostel,Critical,2.2,2,155,2,0,3,8.7,1
+AST-0398,Elevator,Auditorium,Critical,1.4,1,259,4,0,3,18,0
+AST-0399,Civil,Block B,Medium,1.5,0,28,2,1,4,6.5,0
+AST-0400,Civil,Science Block,Low,3.9,3,293,2,0,3,9.7,1
+AST-0401,Elevator,Boys Hostel,Low,6.7,2,256,1,0,4,22.4,1
+AST-0402,Civil,Science Block,Low,8.2,3,326,1,1,4,10.7,1
+AST-0403,Elevator,Girls Hostel,Critical,8.9,4,116,4,1,2,5.5,1
+AST-0404,Furniture,Girls Hostel,High,9.6,4,250,4,1,1,5.7,0
+AST-0405,HVAC,Girls Hostel,Low,4.7,2,340,1,1,2,17.8,1
+AST-0406,Security/CCTV,Main Library,Medium,2.1,1,235,0,0,5,13.3,0
+AST-0407,HVAC,Main Library,Medium,0.9,1,335,0,0,5,22.4,0
+AST-0408,Lab Equipment,Boys Hostel,High,9.3,4,300,3,1,3,17.3,1
+AST-0409,HVAC,Block B,Critical,2.4,1,58,4,0,4,13.6,1
+AST-0410,Civil,Block C,Critical,7.3,4,340,1,0,3,21.6,1
+AST-0411,Civil,Auditorium,Low,5.6,4,49,2,0,3,22,1
+AST-0412,Plumbing,Main Library,Critical,7.7,3,142,2,0,4,20.2,0
+AST-0413,Plumbing,Science Block,Low,6.2,4,325,3,2,4,13.3,1
+AST-0414,Electrical,Block C,Low,7.1,3,217,1,0,3,21.3,1
+AST-0415,Furniture,Boys Hostel,High,1.5,2,318,4,1,5,6,1
+AST-0416,Civil,Girls Hostel,Medium,3.8,3,233,2,0,2,21.3,1
+AST-0417,HVAC,Block C,Medium,4.5,2,200,2,0,3,5.3,1
+AST-0418,Plumbing,Block B,High,6.9,4,232,0,0,3,8.4,0
+AST-0419,Furniture,Block C,Critical,1.9,0,257,2,0,5,7.8,0
+AST-0420,Furniture,Auditorium,Medium,4.8,3,115,3,0,1,17.7,0
+AST-0421,Furniture,Block B,Critical,5.2,3,133,1,1,2,19,0
+AST-0422,Electrical,Girls Hostel,Medium,0.9,1,294,4,1,4,23.3,1
+AST-0423,HVAC,Science Block,High,2.7,1,327,4,2,2,12.6,1
+AST-0424,Furniture,Block C,High,5,2,284,1,1,5,20.7,1
+AST-0425,Electrical,Boys Hostel,Critical,0.7,0,350,0,2,3,8.4,1
+AST-0426,Elevator,Science Block,High,7.3,5,337,2,0,2,16.5,1
+AST-0427,Civil,Block A,Low,5.5,3,30,1,0,3,11,1
+AST-0428,Civil,Block A,Medium,8,5,355,4,0,1,15,1
+AST-0429,HVAC,Block A,Medium,3.3,3,157,1,1,3,15.6,1
+AST-0430,Security/CCTV,Block C,Critical,9.7,5,72,0,0,3,10.6,0
+AST-0431,Plumbing,Main Library,Low,4.2,4,25,1,0,4,4.2,0
+AST-0432,Furniture,Main Library,Critical,2.7,3,16,4,0,3,20.4,0
+AST-0433,Security/CCTV,Girls Hostel,Medium,3.5,2,329,3,0,4,21.5,0
+AST-0434,HVAC,Auditorium,High,3.2,1,151,4,0,1,7.3,0
+AST-0435,Civil,Block C,Critical,9.7,6,292,4,0,5,19.5,1
+AST-0436,Plumbing,Auditorium,High,4.8,3,191,3,0,1,16,1
+AST-0437,Plumbing,Girls Hostel,Critical,1.1,1,209,3,1,4,22.2,1
+AST-0438,HVAC,Block C,Medium,8.3,6,340,0,0,1,14.7,1
+AST-0439,Electrical,Main Library,Low,9.8,3,255,0,1,4,10.6,1
+AST-0440,Civil,Science Block,High,7.2,2,120,2,0,1,11.5,0
+AST-0441,Civil,Girls Hostel,High,7,4,291,3,0,3,14.8,1
+AST-0442,Furniture,Block A,Medium,6.5,4,29,1,0,4,17.7,1
+AST-0443,Plumbing,Block A,High,5.1,4,151,2,0,5,11.7,1
+AST-0444,Plumbing,Auditorium,Low,3.1,2,183,2,1,1,11.3,0
+AST-0445,HVAC,Girls Hostel,Critical,7.5,4,61,1,0,4,12.4,1
+AST-0446,Lab Equipment,Girls Hostel,High,7.6,5,256,4,0,4,16.4,1
+AST-0447,Plumbing,Boys Hostel,High,5.4,3,191,4,1,1,21.3,1
+AST-0448,Furniture,Boys Hostel,Low,2.8,3,102,1,0,4,13.5,1
+AST-0449,Security/CCTV,Block C,Medium,1.8,1,99,3,0,3,19.5,0
+AST-0450,Lab Equipment,Block C,Medium,2,0,153,4,0,5,18.3,1
+AST-0451,Security/CCTV,Block A,High,6.6,2,265,0,0,1,13.3,1
+AST-0452,Elevator,Boys Hostel,Critical,5.6,1,208,4,0,4,10.9,1
+AST-0453,Electrical,Science Block,Low,3.4,1,117,0,0,3,16.4,0
+AST-0454,HVAC,Girls Hostel,Low,9.1,4,166,2,0,3,6.2,1
+AST-0455,Lab Equipment,Block C,High,2.2,0,211,1,2,4,23.3,1
+AST-0456,Electrical,Boys Hostel,Low,8.5,4,301,1,0,3,6.2,0
+AST-0457,Plumbing,Block C,Low,8.6,5,258,1,1,3,6.8,0
+AST-0458,Security/CCTV,Girls Hostel,Low,7.6,4,239,3,0,2,13.4,1
+AST-0459,Elevator,Girls Hostel,Critical,4.4,2,209,3,0,4,22.9,1
+AST-0460,Lab Equipment,Auditorium,Medium,8.5,3,106,0,0,5,10.6,1
+AST-0461,HVAC,Block B,Critical,8.5,6,73,0,0,4,12.7,1
+AST-0462,Civil,Block B,Medium,8.3,5,151,0,1,4,6.3,1
+AST-0463,Lab Equipment,Auditorium,High,3.9,2,87,1,0,5,8.3,1
+AST-0464,Elevator,Boys Hostel,High,3.7,3,176,4,2,4,17.6,1
+AST-0465,Lab Equipment,Block B,Critical,3.4,0,276,1,2,1,12.8,1
+AST-0466,Lab Equipment,Block C,Low,2.5,1,282,0,0,3,17,0
+AST-0467,Elevator,Block C,Medium,4.1,1,43,4,1,3,9.7,0
+AST-0468,Civil,Main Library,Critical,0.5,0,140,3,0,3,6.3,0
+AST-0469,HVAC,Block B,High,8,3,216,1,0,5,14.9,1
+AST-0470,Electrical,Auditorium,Critical,0.6,0,115,1,1,2,23.5,0
+AST-0471,Electrical,Main Library,Critical,6.8,4,232,0,0,4,5.1,0
+AST-0472,Civil,Boys Hostel,Low,2.7,2,333,4,0,3,17.6,0
+AST-0473,Furniture,Block B,Critical,9.8,4,176,3,1,2,20.8,1
+AST-0474,Security/CCTV,Science Block,High,1.2,2,134,4,1,1,23.4,1
+AST-0475,Civil,Boys Hostel,Critical,1.6,1,53,3,0,3,6.7,0
+AST-0476,Electrical,Block A,High,9.3,4,252,1,0,1,8.8,1
+AST-0477,Lab Equipment,Main Library,Critical,6,4,216,0,0,2,7.7,1
+AST-0478,Security/CCTV,Auditorium,Medium,6.1,3,34,1,0,2,23.9,0
+AST-0479,Plumbing,Main Library,Critical,3.8,1,352,0,0,4,21.1,1
+AST-0480,Security/CCTV,Boys Hostel,High,8.1,4,357,3,0,2,16.1,1
+AST-0481,Civil,Block C,High,3.5,1,33,2,2,3,15.1,0
+AST-0482,Security/CCTV,Block A,Low,2.4,0,41,0,0,5,11.1,1
+AST-0483,Furniture,Auditorium,High,9.7,5,295,2,0,5,8.5,1
+AST-0484,Civil,Block A,High,2.3,1,309,1,1,1,20.2,0
+AST-0485,Furniture,Block A,Medium,9.7,5,270,0,0,5,23.1,1
+AST-0486,Furniture,Auditorium,Low,0.9,0,48,3,1,1,12.4,0
+AST-0487,Elevator,Boys Hostel,Critical,5.6,2,352,2,1,5,5.9,1
+AST-0488,Civil,Block A,Critical,0.5,1,236,3,0,1,4.1,1
+AST-0489,Civil,Block C,Medium,5.7,1,279,0,1,1,13.9,1
+AST-0490,Elevator,Girls Hostel,Medium,6.1,3,94,1,0,5,9.2,1
+AST-0491,Plumbing,Boys Hostel,High,8.8,3,258,0,2,5,21.2,1
+AST-0492,Electrical,Science Block,Critical,8.1,4,86,0,0,1,12.5,1
+AST-0493,Security/CCTV,Auditorium,High,1.1,0,83,0,0,2,7.9,0
+AST-0494,Plumbing,Boys Hostel,Low,9,3,46,1,2,1,4.4,0
+AST-0495,Elevator,Science Block,Low,2.2,0,358,1,1,5,21.2,1
+AST-0496,Lab Equipment,Block B,Medium,4.7,2,277,2,0,4,18.6,1
+AST-0497,Furniture,Auditorium,Low,9.3,6,249,2,1,3,11.5,1
+AST-0498,Elevator,Block A,Critical,9.8,6,257,4,1,5,9.7,1
+AST-0499,Elevator,Block A,Critical,3.5,2,82,2,0,4,11.8,1
+AST-0500,Elevator,Block A,High,9.8,4,88,0,1,1,5.8,1
+AST-0501,Civil,Block B,High,6.8,2,146,3,1,3,8.7,0
+AST-0502,Plumbing,Girls Hostel,Medium,0.8,0,31,2,0,4,19.8,0
+AST-0503,Furniture,Main Library,High,8.3,4,22,3,1,2,23.1,1
+AST-0504,Furniture,Girls Hostel,Low,7,3,104,2,1,1,7.5,1
+AST-0505,HVAC,Block B,Low,1.5,2,24,2,0,4,8.7,0
+AST-0506,Furniture,Block C,Critical,9,4,63,0,0,5,21.1,0
+AST-0507,Lab Equipment,Block C,Critical,5,3,162,2,0,4,20.7,1
+AST-0508,Plumbing,Science Block,High,5.1,4,203,3,1,1,15,1
+AST-0509,Civil,Block A,Low,3.4,2,199,0,4,4,13.4,0
+AST-0510,Plumbing,Boys Hostel,Low,7.8,5,58,4,0,4,10,1
+AST-0511,Lab Equipment,Main Library,Medium,3,3,343,1,0,4,22.2,1
+AST-0512,Security/CCTV,Science Block,Low,0.8,0,184,2,0,4,17.5,1
+AST-0513,Civil,Boys Hostel,High,3.7,2,348,3,1,3,23,1
+AST-0514,Security/CCTV,Block A,Low,1.2,0,308,4,0,1,8.8,0
+AST-0515,HVAC,Girls Hostel,Medium,4.9,4,39,4,2,2,23.8,1
+AST-0516,Electrical,Auditorium,Low,9.7,5,38,3,0,5,9.1,1
+AST-0517,Civil,Main Library,Low,1.3,2,136,1,1,2,5.6,0
+AST-0518,HVAC,Block A,Medium,1,2,184,0,0,3,23,1
+AST-0519,HVAC,Block C,High,3,1,141,0,0,1,21,0
+AST-0520,Lab Equipment,Boys Hostel,Low,7.6,2,175,2,2,3,16.5,1
+AST-0521,Electrical,Block C,High,3.1,1,97,4,1,3,12.3,1
+AST-0522,Furniture,Science Block,Medium,3.5,3,293,3,0,4,18.8,1
+AST-0523,Electrical,Block B,Medium,6.4,3,133,0,0,2,10.7,0
+AST-0524,Security/CCTV,Block B,Critical,3,1,319,0,1,2,5.9,0
+AST-0525,HVAC,Block C,Low,9.4,4,336,3,1,5,21.7,1
+AST-0526,Security/CCTV,Girls Hostel,Medium,7.7,2,355,4,0,2,7,1
+AST-0527,HVAC,Auditorium,Medium,6.7,4,345,4,0,4,4.6,1
+AST-0528,Furniture,Auditorium,Critical,2.1,1,34,2,0,3,17.1,0
+AST-0529,Elevator,Boys Hostel,Critical,8.3,4,94,2,0,3,24,0
+AST-0530,Furniture,Block C,Medium,5.1,3,331,2,0,5,15.1,0
+AST-0531,Elevator,Block B,Critical,3.8,1,198,3,0,4,20.8,1
+AST-0532,Elevator,Auditorium,Medium,8.4,4,163,4,0,1,19.4,1
+AST-0533,Electrical,Main Library,High,8.4,3,61,0,0,2,5.1,1
+AST-0534,Civil,Block B,Low,3.8,3,249,1,1,4,20,1
+AST-0535,Lab Equipment,Block B,Low,5.7,3,322,4,1,2,14.5,1
+AST-0536,Furniture,Block C,High,9.6,5,196,4,1,3,17.1,1
+AST-0537,Lab Equipment,Girls Hostel,High,7,4,79,0,1,1,5.8,1
+AST-0538,Civil,Science Block,Medium,5.2,4,100,1,0,5,22.9,0
+AST-0539,Lab Equipment,Block B,Low,4.2,2,324,4,0,4,13.9,1
+AST-0540,Electrical,Block A,High,5.2,2,17,0,0,5,7.1,0
+AST-0541,Furniture,Block C,Medium,4.5,1,97,4,1,4,6.4,0
+AST-0542,HVAC,Auditorium,High,4.1,3,232,4,1,5,11.7,1
+AST-0543,Electrical,Block B,Medium,5.7,2,239,0,1,5,14.9,1
+AST-0544,Civil,Main Library,Medium,6.7,4,110,4,0,3,14,1
+AST-0545,Furniture,Girls Hostel,Low,6.1,4,31,0,0,1,5.7,0
+AST-0546,Electrical,Science Block,Medium,2.7,2,288,4,1,5,22.6,1
+AST-0547,Civil,Boys Hostel,Low,0.7,0,329,4,1,1,20.2,0
+AST-0548,Furniture,Block A,Critical,4.3,2,52,1,2,5,11.2,1
+AST-0549,Plumbing,Girls Hostel,Critical,1.2,1,49,1,0,3,8.6,0
+AST-0550,Elevator,Science Block,High,4.5,1,11,0,0,4,21.7,1
+AST-0551,Furniture,Boys Hostel,Low,7.5,3,84,2,0,3,18.1,1
+AST-0552,Elevator,Block B,Critical,7,3,141,1,0,1,21.9,1
+AST-0553,Lab Equipment,Block B,Medium,0.9,0,56,2,1,4,23.5,1
+AST-0554,Plumbing,Block B,Low,5.1,2,234,1,0,4,13.2,1
+AST-0555,Civil,Block C,Medium,3.8,1,221,2,1,1,4.2,0
+AST-0556,Civil,Main Library,Low,7.6,3,310,0,0,3,22.7,1
+AST-0557,Lab Equipment,Auditorium,High,7.7,4,254,2,0,5,12.5,1
+AST-0558,Furniture,Block A,Critical,5,3,177,2,0,4,6.5,1
+AST-0559,Lab Equipment,Block C,Medium,3.5,3,75,2,1,2,6.7,0
+AST-0560,Lab Equipment,Main Library,Low,1.4,1,216,3,2,1,4.8,1
+AST-0561,HVAC,Block C,Low,6.7,5,339,2,0,5,17.7,1
+AST-0562,Plumbing,Auditorium,Medium,6.2,2,40,0,1,5,4.6,1
+AST-0563,Electrical,Boys Hostel,High,2.3,0,254,0,0,1,16.9,0
+AST-0564,HVAC,Block A,Critical,2,1,77,4,1,1,5.9,0
+AST-0565,HVAC,Auditorium,High,4.4,2,229,1,1,3,7.1,0
+AST-0566,Elevator,Main Library,Low,4.7,1,262,2,0,2,22.6,1
+AST-0567,Civil,Girls Hostel,Medium,9.2,5,338,2,0,1,13.8,1
+AST-0568,Plumbing,Boys Hostel,High,3.9,2,67,1,1,1,10.5,0
+AST-0569,HVAC,Block A,Low,9.7,6,178,1,0,4,6.5,1
+AST-0570,Electrical,Block B,Medium,4,2,222,4,0,4,17.5,1
+AST-0571,Plumbing,Girls Hostel,Medium,7.4,4,311,0,1,1,19.4,1
+AST-0572,Lab Equipment,Block B,Critical,7.2,2,19,4,0,4,4.6,1
+AST-0573,Electrical,Auditorium,Critical,4.2,1,21,3,0,3,18.2,1
+AST-0574,Security/CCTV,Block C,Medium,0.8,0,129,2,0,4,8.1,0
+AST-0575,Electrical,Auditorium,Critical,3,2,36,1,2,2,4.1,1
+AST-0576,Plumbing,Block B,High,6.1,2,137,2,2,5,19.6,1
+AST-0577,Furniture,Girls Hostel,Low,8.2,4,13,3,0,2,13,1
+AST-0578,Furniture,Girls Hostel,High,2.6,0,27,2,2,1,10.8,1
+AST-0579,Elevator,Girls Hostel,High,7.5,3,196,0,1,3,22.5,1
+AST-0580,Electrical,Auditorium,Critical,6.1,2,173,3,0,4,22.5,0
+AST-0581,Furniture,Girls Hostel,Medium,2.2,0,183,4,0,4,8.4,0
+AST-0582,Electrical,Boys Hostel,Medium,1,0,248,1,0,5,15.1,1
+AST-0583,Civil,Block C,Critical,2.6,0,342,2,1,3,17.1,1
+AST-0584,Lab Equipment,Girls Hostel,Medium,5.3,1,345,3,2,4,13.4,1
+AST-0585,Elevator,Block A,Low,5.8,2,116,1,0,4,22.1,1
+AST-0586,Elevator,Science Block,Low,8.5,3,93,1,1,5,17.6,1
+AST-0587,Lab Equipment,Auditorium,Medium,8.7,4,151,2,0,4,18.7,1
+AST-0588,Security/CCTV,Auditorium,Low,9.2,4,331,1,4,3,5.9,1
+AST-0589,HVAC,Science Block,Low,7.7,5,98,3,0,3,13,1
+AST-0590,Plumbing,Auditorium,High,0.7,1,234,2,0,5,20,0
+AST-0591,Security/CCTV,Block A,High,6.4,3,260,3,0,3,13.9,1
+AST-0592,Electrical,Boys Hostel,Critical,6.5,4,294,1,1,5,14.2,1
+AST-0593,HVAC,Block A,High,7.6,5,345,4,0,3,22.3,1
+AST-0594,Lab Equipment,Block B,High,5.8,4,90,4,0,1,16.4,0
+AST-0595,Elevator,Boys Hostel,Low,0.6,0,238,0,0,4,15.5,1
+AST-0596,Elevator,Boys Hostel,Medium,5.8,4,53,1,0,2,17.5,0
+AST-0597,Electrical,Main Library,Critical,9.1,5,34,2,1,2,17.4,1
+AST-0598,Electrical,Block B,Low,7,5,179,1,0,1,10.2,1
+AST-0599,Elevator,Science Block,High,5.2,2,43,3,0,4,10.9,1
+AST-0600,Security/CCTV,Auditorium,Critical,1.8,2,160,0,2,1,18,1
+AST-0601,HVAC,Block A,High,0.7,0,31,3,1,4,6.1,0
+AST-0602,Furniture,Girls Hostel,Low,8.1,5,322,2,0,5,15.4,1
+AST-0603,Plumbing,Main Library,High,1.4,2,193,2,0,5,11.5,0
+AST-0604,Security/CCTV,Main Library,Low,5.2,4,14,1,1,5,23.7,0
+AST-0605,Electrical,Girls Hostel,Critical,6.9,2,208,2,2,5,5.7,1
+AST-0606,Lab Equipment,Block B,Low,0.8,0,77,1,1,5,14.8,1
+AST-0607,HVAC,Block C,Critical,8.1,3,161,2,1,4,6.5,1
+AST-0608,Security/CCTV,Science Block,Medium,3.2,1,203,3,2,2,11.6,1
+AST-0609,Electrical,Block A,Medium,1.5,2,48,4,0,5,20.4,0
+AST-0610,HVAC,Main Library,Medium,4.2,1,320,2,0,2,19.1,0
+AST-0611,Civil,Block C,Critical,8.8,5,174,0,0,4,20.1,1
+AST-0612,Plumbing,Block A,High,6.6,4,72,0,0,4,9.8,1
+AST-0613,Furniture,Science Block,High,9.4,6,180,2,0,1,18.8,1
+AST-0614,Civil,Girls Hostel,Medium,1.6,1,162,4,0,5,7.1,1
+AST-0615,Elevator,Auditorium,Low,7.6,4,319,0,0,1,7.4,1
+AST-0616,Security/CCTV,Auditorium,Critical,3.2,1,165,1,0,5,18.1,1
+AST-0617,Security/CCTV,Girls Hostel,Medium,6.4,2,297,2,1,2,8.4,1
+AST-0618,HVAC,Girls Hostel,Medium,7.1,5,189,4,1,4,21,1
+AST-0619,HVAC,Block A,Critical,0.7,0,56,3,0,1,8.3,1
+AST-0620,Electrical,Block C,High,2.6,0,344,3,0,2,10.3,1
+AST-0621,Lab Equipment,Science Block,Critical,6.7,3,291,0,1,4,23.8,1
+AST-0622,HVAC,Science Block,Low,4.3,1,244,4,0,5,10.4,1
+AST-0623,Electrical,Block C,Low,6.2,4,28,0,1,3,5.4,0
+AST-0624,Furniture,Block C,Medium,8,3,140,4,0,5,8.7,1
+AST-0625,Electrical,Block B,Low,2.3,1,269,1,1,1,6.1,1
+AST-0626,Security/CCTV,Block C,Critical,8.7,4,357,1,1,3,9.8,1
+AST-0627,HVAC,Science Block,High,1.7,2,47,3,0,4,18.9,1
+AST-0628,Electrical,Auditorium,High,8.4,4,328,4,0,3,20.9,1
+AST-0629,Security/CCTV,Girls Hostel,Critical,6.4,5,87,1,2,2,11.7,1
+AST-0630,Lab Equipment,Main Library,Medium,1.6,0,53,1,1,2,20,0
+AST-0631,Plumbing,Block A,High,4.4,2,260,3,0,1,13.3,1
+AST-0632,Plumbing,Main Library,High,8.4,5,40,4,0,4,8.6,1
+AST-0633,HVAC,Boys Hostel,Critical,6.6,4,218,3,1,2,6.2,1
+AST-0634,Lab Equipment,Block B,Critical,3.2,3,152,2,1,5,15.7,1
+AST-0635,Civil,Block A,Medium,6.4,2,337,3,0,4,23.1,1
+AST-0636,Civil,Block A,High,6.9,5,74,0,0,5,6.2,0
+AST-0637,HVAC,Auditorium,Low,3,1,247,0,0,5,23.3,0
+AST-0638,HVAC,Block B,High,8.2,5,134,4,2,4,11.6,1
+AST-0639,Civil,Girls Hostel,High,6,2,317,0,1,4,14.9,1
+AST-0640,HVAC,Block C,Critical,7.5,4,226,4,0,4,13.7,1
+AST-0641,Lab Equipment,Girls Hostel,Low,4.3,2,250,2,0,4,4.4,1
+AST-0642,Plumbing,Auditorium,Medium,0.5,0,357,4,0,1,15,0
+AST-0643,Elevator,Auditorium,High,9.6,4,252,0,0,3,13.5,1
+AST-0644,Electrical,Block A,Critical,8.2,4,128,4,1,5,23.4,1
+AST-0645,Elevator,Science Block,Critical,2.4,0,28,0,0,2,7.2,1
+AST-0646,Furniture,Main Library,High,3.2,2,250,1,0,1,19.6,1
+AST-0647,Plumbing,Block B,High,3.5,1,154,3,1,1,14.2,1
+AST-0648,Plumbing,Block B,Critical,1,1,230,4,1,3,7.2,1
+AST-0649,Lab Equipment,Girls Hostel,High,6.7,3,248,4,0,4,6.4,0
+AST-0650,Security/CCTV,Science Block,Critical,6.2,3,341,4,0,1,15.4,1
+AST-0651,Plumbing,Boys Hostel,Medium,5.5,2,256,1,0,4,4.7,1
+AST-0652,Elevator,Boys Hostel,High,0.8,2,266,1,2,4,17.6,1
+AST-0653,HVAC,Main Library,Low,7.7,4,347,2,1,2,7.3,1
+AST-0654,Lab Equipment,Science Block,High,3.2,2,202,2,0,4,10.3,1
+AST-0655,Electrical,Auditorium,Low,2.5,2,253,0,0,4,9.9,0
+AST-0656,HVAC,Girls Hostel,Critical,8.9,6,215,4,1,3,4.8,1
+AST-0657,Plumbing,Girls Hostel,Low,7.9,3,241,0,0,1,7.8,0
+AST-0658,Electrical,Auditorium,Critical,1.2,1,20,0,1,3,10.5,0
+AST-0659,Furniture,Block C,Medium,2.8,0,123,1,0,3,23.3,0
+AST-0660,Lab Equipment,Science Block,Critical,9.8,4,301,3,0,4,6,1
+AST-0661,HVAC,Science Block,Medium,5.3,3,163,2,1,4,5.5,1
+AST-0662,Lab Equipment,Boys Hostel,Critical,4.6,3,262,4,0,4,4.6,1
+AST-0663,Elevator,Girls Hostel,Critical,8,3,211,3,0,4,5.5,1
+AST-0664,HVAC,Science Block,High,9.4,6,148,1,0,3,9.8,1
+AST-0665,HVAC,Girls Hostel,High,7.3,4,45,0,1,3,8.2,1
+AST-0666,HVAC,Science Block,High,3.1,1,212,3,0,4,4.2,1
+AST-0667,Plumbing,Block A,Critical,6.3,4,82,0,2,2,23.1,1
+AST-0668,Plumbing,Block B,High,6.2,3,105,2,0,1,21.6,1
+AST-0669,Plumbing,Block C,Medium,8.6,5,142,2,0,3,11.2,1
+AST-0670,Furniture,Science Block,Low,1.8,2,31,0,0,1,4.5,0
+AST-0671,Plumbing,Science Block,Low,3.1,1,138,0,0,1,12.6,1
+AST-0672,HVAC,Boys Hostel,Low,6.9,4,243,0,0,2,10.4,1
+AST-0673,Plumbing,Block C,Critical,2.3,2,51,0,0,4,11,1
+AST-0674,Plumbing,Girls Hostel,High,9.9,6,111,0,1,2,5.4,1
+AST-0675,Security/CCTV,Science Block,High,5.1,4,339,3,0,2,6.6,1
+AST-0676,Electrical,Science Block,Critical,4.2,2,311,4,0,4,7.2,1
+AST-0677,Civil,Auditorium,Critical,1.8,0,176,2,0,4,22.2,1
+AST-0678,Security/CCTV,Block B,Low,4.4,1,184,2,0,5,13.5,0
+AST-0679,Electrical,Block C,Critical,8,5,329,3,0,1,16.3,1
+AST-0680,Plumbing,Block C,Medium,0.9,2,66,3,0,3,20.6,0
+AST-0681,Electrical,Block C,High,1.1,0,288,4,1,3,18.3,1
+AST-0682,HVAC,Main Library,High,7.4,5,322,3,2,4,19.8,1
+AST-0683,Plumbing,Boys Hostel,Low,4.8,2,255,1,0,3,16.6,0
+AST-0684,Plumbing,Boys Hostel,Low,2.3,0,73,3,1,1,11.8,0
+AST-0685,Elevator,Boys Hostel,High,9.5,4,39,1,0,4,23.6,1
+AST-0686,Security/CCTV,Block B,High,8.3,5,96,4,1,3,20.9,1
+AST-0687,Civil,Block B,Critical,3.3,2,185,3,0,4,18,1
+AST-0688,Furniture,Main Library,Medium,4.1,3,299,3,0,3,10.5,1
+AST-0689,Civil,Auditorium,Low,8.3,4,330,0,1,5,8.6,1
+AST-0690,Plumbing,Block A,High,10,5,41,4,0,5,7.5,1
+AST-0691,Plumbing,Block B,Medium,4.2,2,75,1,0,1,6.1,0
+AST-0692,Security/CCTV,Block B,Low,1.5,2,208,2,0,3,20.4,1
+AST-0693,HVAC,Girls Hostel,Critical,2.6,1,105,0,0,2,20.6,0
+AST-0694,Security/CCTV,Science Block,Low,9.2,5,62,0,0,1,13.2,1
+AST-0695,Civil,Science Block,Critical,1.1,0,216,4,0,3,4.7,1
+AST-0696,HVAC,Science Block,Critical,0.7,0,94,3,1,4,9,1
+AST-0697,Security/CCTV,Boys Hostel,High,4.6,4,76,2,0,2,8.6,1
+AST-0698,Plumbing,Main Library,Critical,6.8,4,224,2,0,4,21,1
+AST-0699,Furniture,Block A,High,7.9,4,108,4,1,2,16.5,1
+AST-0700,Electrical,Girls Hostel,Critical,8.6,4,45,3,0,4,10.7,1
+AST-0701,Civil,Block A,Medium,3,0,86,2,0,2,23.9,0
+AST-0702,Furniture,Science Block,Low,0.9,1,166,0,1,5,13.3,1
+AST-0703,Lab Equipment,Science Block,Low,0.6,1,174,3,2,4,14.8,1
+AST-0704,HVAC,Girls Hostel,Critical,7.6,2,208,3,1,4,20.4,0
+AST-0705,Civil,Boys Hostel,Critical,7.2,4,253,1,0,1,4.1,0
+AST-0706,Civil,Block C,Medium,3.4,1,301,3,0,2,13.6,0
+AST-0707,Furniture,Block C,Critical,1.6,0,109,1,1,2,18.4,0
+AST-0708,Furniture,Science Block,High,2.4,2,200,4,1,3,12.8,0
+AST-0709,Furniture,Main Library,Low,3.2,3,258,4,0,2,13.8,0
+AST-0710,Elevator,Science Block,Medium,6.4,3,112,2,1,2,6.8,1
+AST-0711,Civil,Main Library,Medium,6.3,4,229,2,0,1,16.6,1
+AST-0712,Furniture,Girls Hostel,Critical,6.8,5,201,2,0,2,23.8,1
+AST-0713,HVAC,Auditorium,Low,8.2,3,66,4,0,1,7.6,0
+AST-0714,Security/CCTV,Block B,Low,6,2,188,3,0,3,5.1,1
+AST-0715,HVAC,Block A,Medium,5.4,3,179,1,0,1,5.9,1
+AST-0716,Security/CCTV,Boys Hostel,Medium,4.6,3,235,0,0,3,23.5,1
+AST-0717,Civil,Girls Hostel,Medium,6.2,3,347,3,0,5,20.3,1
+AST-0718,Furniture,Boys Hostel,Low,7.6,4,212,3,0,3,14.1,1
+AST-0719,Lab Equipment,Girls Hostel,Critical,6.1,2,306,4,1,3,17.3,1
+AST-0720,Plumbing,Main Library,Low,1.6,0,57,4,0,5,8.2,0
+AST-0721,HVAC,Block A,Low,9.1,3,189,1,0,1,13.8,1
+AST-0722,Elevator,Block B,Critical,8.1,4,88,3,1,3,6.7,1
+AST-0723,Plumbing,Girls Hostel,Low,7.5,4,132,1,1,3,10.8,0
+AST-0724,Lab Equipment,Auditorium,High,4.7,3,349,1,0,5,22.3,1
+AST-0725,Civil,Block A,Medium,4.2,3,138,0,0,1,21.7,0
+AST-0726,HVAC,Girls Hostel,Medium,1.2,0,198,2,2,4,15.9,1
+AST-0727,Furniture,Auditorium,Low,4.3,2,238,4,0,2,4.1,0
+AST-0728,Electrical,Boys Hostel,High,8.5,3,219,1,0,4,23.3,1
+AST-0729,Elevator,Boys Hostel,Low,1.7,1,152,3,0,1,15.8,1
+AST-0730,Civil,Block B,Critical,2.5,2,134,4,1,4,10.8,0
+AST-0731,HVAC,Main Library,Critical,8.9,3,154,4,0,4,10.1,0
+AST-0732,HVAC,Auditorium,Low,5.5,2,71,0,1,3,11.3,1
+AST-0733,Lab Equipment,Main Library,Medium,7.6,5,339,1,3,2,17.1,1
+AST-0734,HVAC,Block C,Low,8,5,38,1,2,5,11.5,1
+AST-0735,Lab Equipment,Block B,Low,8.4,3,22,0,0,5,19.6,1
+AST-0736,Plumbing,Girls Hostel,Critical,6,4,266,1,2,4,22.7,1
+AST-0737,Security/CCTV,Girls Hostel,High,6.1,2,170,4,0,5,10.2,1
+AST-0738,Lab Equipment,Science Block,Low,3.3,3,92,4,1,4,17,1
+AST-0739,Civil,Girls Hostel,High,4.5,3,228,1,0,1,17.1,1
+AST-0740,Civil,Auditorium,Critical,0.9,1,234,4,0,2,9.4,0
+AST-0741,Furniture,Boys Hostel,Critical,4.4,1,221,3,0,1,11.9,1
+AST-0742,Elevator,Block C,Low,3.9,2,117,4,1,1,4.3,0
+AST-0743,HVAC,Girls Hostel,Critical,6.1,3,236,0,0,2,13.9,0
+AST-0744,Civil,Auditorium,Medium,4.1,2,187,3,1,3,7.4,0
+AST-0745,Furniture,Block B,Critical,7.9,5,206,4,2,5,19.1,1
+AST-0746,Furniture,Science Block,Low,1,1,258,1,0,2,12.9,0
+AST-0747,Elevator,Boys Hostel,Medium,5.9,3,174,0,0,5,4.7,1
+AST-0748,Lab Equipment,Girls Hostel,Low,5.5,2,305,0,0,5,12.1,1
+AST-0749,Elevator,Block B,Critical,5.5,4,59,0,0,4,6.1,1
+AST-0750,Lab Equipment,Block B,High,6,3,281,4,1,4,6.2,1
+AST-0751,HVAC,Main Library,Critical,4.8,4,148,2,0,4,10,1
+AST-0752,Lab Equipment,Girls Hostel,Low,2.4,2,120,0,0,1,15.5,1
+AST-0753,Elevator,Auditorium,High,4.8,3,359,2,2,5,6.7,1
+AST-0754,Plumbing,Block A,High,3.9,3,230,0,1,3,4.1,0
+AST-0755,Lab Equipment,Boys Hostel,Medium,9.5,4,327,2,0,1,23.9,1
+AST-0756,HVAC,Boys Hostel,Low,4.7,4,315,2,0,1,5.1,1
+AST-0757,Plumbing,Block B,Low,4.2,1,12,0,1,2,16.8,0
+AST-0758,Lab Equipment,Main Library,Medium,9.3,5,14,3,0,2,11.3,0
+AST-0759,Elevator,Block C,Critical,5.7,3,191,4,1,2,23.8,1
+AST-0760,HVAC,Block A,Critical,2.1,2,155,3,1,4,21.2,1
+AST-0761,Civil,Science Block,High,1.4,0,40,0,0,4,21.7,1
+AST-0762,Lab Equipment,Block C,Medium,8.4,3,140,4,0,3,23,0
+AST-0763,Lab Equipment,Block C,Medium,7.2,4,131,3,1,2,23,1
+AST-0764,Civil,Block B,Medium,7.8,5,286,0,0,3,21.3,1
+AST-0765,Civil,Science Block,Critical,4.4,1,33,4,0,3,17,1
+AST-0766,Security/CCTV,Block A,High,1.3,1,162,4,0,1,7.2,1
+AST-0767,Elevator,Block A,Medium,3.8,0,137,0,1,5,21.6,0
+AST-0768,HVAC,Block A,High,7.3,3,164,0,0,1,16.5,1
+AST-0769,Furniture,Auditorium,Medium,3.6,3,120,4,1,3,21.7,0
+AST-0770,Elevator,Girls Hostel,Medium,6.7,4,32,1,2,1,19.8,1
+AST-0771,Electrical,Girls Hostel,Critical,5.6,2,39,1,0,1,17.5,1
+AST-0772,Lab Equipment,Girls Hostel,Low,9.6,4,117,0,0,1,5.9,1
+AST-0773,Electrical,Block A,Critical,6.7,3,227,1,1,1,13.1,1
+AST-0774,Civil,Block B,Low,4.8,2,327,3,1,4,15.1,1
+AST-0775,Lab Equipment,Science Block,Low,8.6,4,11,2,0,4,20,1
+AST-0776,Elevator,Main Library,Low,5.2,4,18,0,0,5,16,1
+AST-0777,Civil,Block C,Low,3.2,2,339,2,1,1,15.2,1
+AST-0778,Electrical,Main Library,Medium,2.2,0,259,3,0,4,17.7,0
+AST-0779,Electrical,Main Library,High,2.9,1,38,0,1,3,4.4,0
+AST-0780,Security/CCTV,Girls Hostel,Low,4.2,3,243,0,0,2,23.6,1
+AST-0781,Electrical,Auditorium,Low,4.3,4,237,1,0,1,10.8,0
+AST-0782,Security/CCTV,Science Block,Low,5.6,3,252,3,0,2,7.2,1
+AST-0783,Electrical,Auditorium,High,2.9,0,153,4,1,1,5.7,0
+AST-0784,Electrical,Boys Hostel,High,4.8,4,262,2,0,2,4.8,1
+AST-0785,HVAC,Girls Hostel,Critical,5,2,102,4,0,3,13.5,1
+AST-0786,Elevator,Boys Hostel,Medium,4.2,4,317,2,0,3,22.5,1
+AST-0787,Furniture,Science Block,Critical,3.6,2,345,3,0,1,7.1,1
+AST-0788,Furniture,Block C,High,3,1,250,1,1,3,11.3,1
+AST-0789,Plumbing,Main Library,High,8.5,5,40,0,0,3,14.1,1
+AST-0790,Civil,Main Library,Medium,6.7,2,117,1,1,1,8.9,0
+AST-0791,Electrical,Block A,Low,5.8,2,343,0,1,4,21.6,0
+AST-0792,Security/CCTV,Auditorium,High,6.4,3,337,0,0,2,5.5,1
+AST-0793,Electrical,Block A,Medium,6.9,4,329,4,0,4,7.8,0
+AST-0794,Furniture,Block C,Critical,9.3,5,272,2,1,1,16.4,1
+AST-0795,Civil,Girls Hostel,Low,0.6,0,73,3,4,2,19.1,1
+AST-0796,Plumbing,Block A,High,2.4,1,151,1,0,4,14.7,1
+AST-0797,Lab Equipment,Block A,Medium,3.7,1,239,1,1,1,14.7,1
+AST-0798,Plumbing,Science Block,Critical,0.9,1,78,3,0,4,7.9,0
+AST-0799,Electrical,Science Block,High,0.7,0,33,1,0,3,20.6,0
+AST-0800,Plumbing,Science Block,Low,2.8,2,170,3,0,2,12,1
+AST-0801,Civil,Block C,Medium,3.1,1,92,1,0,5,20,0
+AST-0802,Elevator,Girls Hostel,Low,3,1,346,1,0,4,16.7,1
+AST-0803,HVAC,Block B,High,2.3,0,157,0,0,4,10.1,1
+AST-0804,Electrical,Block C,High,9.4,5,256,0,3,1,13.8,1
+AST-0805,Electrical,Auditorium,Low,2.6,1,55,3,0,2,21.4,1
+AST-0806,Furniture,Boys Hostel,Low,1.8,2,184,2,1,5,9.3,1
+AST-0807,Plumbing,Block A,Low,3.2,2,91,3,0,5,21.6,0
+AST-0808,Plumbing,Main Library,Medium,0.9,0,287,3,1,1,9.7,1
+AST-0809,Lab Equipment,Boys Hostel,Critical,9.7,5,142,2,1,5,19,1
+AST-0810,Security/CCTV,Auditorium,High,9.7,4,226,2,0,1,5.7,0
+AST-0811,Security/CCTV,Boys Hostel,High,6.6,4,46,2,0,3,22.8,0
+AST-0812,Lab Equipment,Block C,Medium,2.2,1,317,1,1,5,18.6,1
+AST-0813,Furniture,Block C,High,5.1,3,61,4,2,1,18.2,1
+AST-0814,Civil,Block B,Low,4.5,3,277,4,1,2,13.4,1
+AST-0815,Security/CCTV,Boys Hostel,High,0.6,0,189,3,0,4,11.3,1
+AST-0816,Security/CCTV,Main Library,Low,5,4,93,2,0,1,10.3,0
+AST-0817,Lab Equipment,Science Block,Low,4.7,3,152,3,0,2,19.5,1
+AST-0818,Civil,Block A,High,6.1,3,243,4,0,4,5.2,1
+AST-0819,Furniture,Block C,Medium,3.6,1,103,2,2,2,19.3,0
+AST-0820,Furniture,Girls Hostel,Low,4.4,2,307,3,0,5,18.9,0
+AST-0821,Electrical,Auditorium,High,4.9,3,307,4,1,1,12.3,1
+AST-0822,Security/CCTV,Science Block,Low,8.2,4,161,0,0,4,22.9,1
+AST-0823,Elevator,Block A,Low,6.7,3,285,4,0,5,20.3,1
+AST-0824,Security/CCTV,Boys Hostel,Medium,6.7,4,94,3,1,2,23.4,0
+AST-0825,HVAC,Girls Hostel,High,4.5,1,250,1,0,5,6.6,1
+AST-0826,Electrical,Boys Hostel,High,9.1,5,168,1,0,1,17.6,1
+AST-0827,Furniture,Science Block,High,6.2,3,352,1,1,3,21,1
+AST-0828,Plumbing,Auditorium,Low,6.3,3,157,1,0,1,9.7,1
+AST-0829,Elevator,Auditorium,Critical,1.4,1,237,3,0,1,12.8,1
+AST-0830,Elevator,Block B,Medium,9.9,5,233,4,0,2,4.2,1
+AST-0831,HVAC,Science Block,Critical,1.2,0,141,3,1,1,14.9,0
+AST-0832,HVAC,Main Library,Low,5.8,4,55,0,0,1,10.4,1
+AST-0833,Security/CCTV,Science Block,Critical,3.1,1,215,4,0,4,14,1
+AST-0834,Elevator,Girls Hostel,Low,9.3,6,257,1,2,5,16.9,1
+AST-0835,Electrical,Block A,Low,9.2,5,41,4,1,1,20.1,1
+AST-0836,Electrical,Girls Hostel,Medium,9.3,4,299,1,0,2,7.8,1
+AST-0837,Electrical,Auditorium,Medium,3.5,2,180,4,0,3,11.1,0
+AST-0838,Plumbing,Girls Hostel,Critical,3.5,3,79,4,1,5,18,0
+AST-0839,Civil,Main Library,Critical,3.2,3,323,2,1,4,20.4,1
+AST-0840,Furniture,Girls Hostel,Low,6.3,2,348,2,0,5,23.9,1
+AST-0841,HVAC,Science Block,High,5.8,3,234,0,1,3,17.3,1
+AST-0842,Plumbing,Block C,Critical,2.9,1,72,3,0,2,5.6,0
+AST-0843,Elevator,Science Block,High,6,2,237,3,0,4,18.8,1
+AST-0844,Civil,Girls Hostel,Critical,8.8,5,29,1,0,5,16.8,1
+AST-0845,Security/CCTV,Main Library,Critical,5.2,4,158,1,0,2,4.5,1
+AST-0846,Electrical,Girls Hostel,High,0.5,1,281,0,0,5,6.1,1
+AST-0847,Furniture,Block B,Low,7,3,312,2,1,1,4.3,1
+AST-0848,Civil,Boys Hostel,Low,2,1,257,3,1,2,11.4,0
+AST-0849,Lab Equipment,Block B,High,4.1,3,31,1,1,4,13.1,1
+AST-0850,Civil,Block B,Critical,0.9,0,53,0,0,4,9,0
+AST-0851,Lab Equipment,Science Block,High,6,3,84,0,1,4,23.7,0
+AST-0852,Lab Equipment,Boys Hostel,Critical,1.7,0,123,4,0,2,5.8,1
+AST-0853,Furniture,Science Block,Critical,4.6,3,340,0,0,2,7.7,1
+AST-0854,Lab Equipment,Girls Hostel,High,3.7,1,203,2,0,4,13.8,1
+AST-0855,Civil,Auditorium,Medium,9.6,4,309,2,2,2,5.5,1
+AST-0856,Elevator,Block B,Low,6,2,68,4,1,3,22,0
+AST-0857,Furniture,Girls Hostel,Medium,10,6,261,0,1,4,14.7,1
+AST-0858,Civil,Block A,Critical,1.3,0,137,2,0,1,14.2,0
+AST-0859,Security/CCTV,Science Block,Low,4.9,2,185,0,0,1,15.5,1
+AST-0860,Civil,Block C,Medium,9.4,4,317,4,0,4,4.2,0
+AST-0861,Security/CCTV,Science Block,Medium,7.8,3,72,2,1,1,11.6,0
+AST-0862,Lab Equipment,Boys Hostel,Medium,9.4,3,198,0,0,3,6.6,1
+AST-0863,Civil,Science Block,Critical,4.7,2,130,2,0,5,22,0
+AST-0864,Civil,Main Library,High,8.1,4,199,1,1,2,18.3,1
+AST-0865,Civil,Block A,Critical,6.3,4,337,2,0,3,5.2,0
+AST-0866,Security/CCTV,Girls Hostel,Critical,7.5,2,142,2,1,3,19,1
+AST-0867,Security/CCTV,Auditorium,High,1.8,1,314,0,0,3,18.7,1
+AST-0868,HVAC,Main Library,Medium,0.6,2,318,0,1,5,17.4,1
+AST-0869,Security/CCTV,Main Library,Medium,8.8,5,92,1,1,5,4.2,1
+AST-0870,Plumbing,Girls Hostel,Medium,5.3,4,284,1,2,1,20.8,1
+AST-0871,HVAC,Girls Hostel,High,3.9,2,61,0,0,3,18.6,1
+AST-0872,Elevator,Girls Hostel,Critical,1.1,0,140,2,0,4,16.2,0
+AST-0873,Plumbing,Main Library,Low,8.8,5,314,1,0,3,5.3,0
+AST-0874,Security/CCTV,Block A,Critical,7.3,3,107,1,0,2,4.7,1
+AST-0875,Plumbing,Block C,Medium,1,0,264,4,0,1,7.1,1
+AST-0876,Lab Equipment,Boys Hostel,Low,2.5,1,162,0,0,1,20.4,1
+AST-0877,Lab Equipment,Main Library,Critical,6.7,3,266,0,1,3,14.7,1
+AST-0878,Civil,Main Library,High,5,3,325,2,0,1,14.7,1
+AST-0879,HVAC,Science Block,Low,8,3,327,0,0,4,21.5,1
+AST-0880,Lab Equipment,Science Block,Low,8,4,347,1,1,4,6.4,1
+AST-0881,Civil,Auditorium,High,1.9,0,241,3,0,5,15.8,0
+AST-0882,Security/CCTV,Block A,Critical,1.2,0,271,2,2,2,6.5,1
+AST-0883,HVAC,Block B,Medium,7.2,4,136,0,0,3,22.7,1
+AST-0884,Furniture,Block B,Medium,3,2,283,0,0,5,19.6,1
+AST-0885,Furniture,Block B,High,8.6,4,82,0,2,1,16.4,1
+AST-0886,Lab Equipment,Block B,Medium,2.1,0,359,2,0,1,7.3,1
+AST-0887,Electrical,Science Block,Low,8.8,3,130,1,0,3,13.2,0
+AST-0888,HVAC,Girls Hostel,High,7.1,4,218,2,0,2,14.4,1
+AST-0889,Civil,Block B,High,3.4,3,342,3,1,1,5.1,1
+AST-0890,Lab Equipment,Boys Hostel,Medium,5.4,3,258,2,0,4,15.1,1
+AST-0891,Elevator,Boys Hostel,High,5.7,4,233,4,0,2,8.5,0
+AST-0892,Civil,Block C,High,6.4,3,144,3,0,2,6.2,0
+AST-0893,Civil,Main Library,High,8.8,4,92,2,0,5,22.2,1
+AST-0894,Elevator,Block A,High,0.6,0,299,1,2,4,10.4,1
+AST-0895,Elevator,Science Block,Critical,5.4,2,329,4,0,4,20,1
+AST-0896,Elevator,Boys Hostel,Low,1.1,1,169,0,0,1,14.7,0
+AST-0897,Furniture,Girls Hostel,Critical,6.3,5,285,0,2,4,14.7,1
+AST-0898,HVAC,Main Library,Low,1.5,1,81,0,0,5,9.8,1
+AST-0899,Plumbing,Block C,Low,4.4,2,46,0,1,4,10.9,0
+AST-0900,Elevator,Boys Hostel,Medium,2.1,2,183,2,0,5,6.9,1
+AST-0901,HVAC,Block A,Critical,5,3,64,0,0,3,21.9,0
+AST-0902,Furniture,Science Block,Medium,4.4,1,184,1,1,1,17.4,1
+AST-0903,Electrical,Boys Hostel,Critical,6.8,4,279,0,0,4,20.9,1
+AST-0904,HVAC,Main Library,Medium,2,1,124,1,1,1,23.3,1
+AST-0905,Security/CCTV,Block B,Low,7.4,4,247,4,0,4,4.8,1
+AST-0906,Plumbing,Main Library,Low,9.2,3,260,4,0,3,14.7,1
+AST-0907,Plumbing,Science Block,High,3.9,1,109,2,0,3,23.2,1
+AST-0908,Civil,Boys Hostel,Low,7.6,4,235,4,1,1,10,1
+AST-0909,Civil,Boys Hostel,Medium,9.2,4,223,2,0,1,4.6,1
+AST-0910,Electrical,Science Block,Critical,7.8,3,215,0,0,1,17.7,1
+AST-0911,HVAC,Girls Hostel,Critical,4.3,1,172,2,1,2,14.3,1
+AST-0912,Elevator,Auditorium,Medium,5.3,4,343,4,1,1,10.9,1
+AST-0913,HVAC,Main Library,Critical,7.9,4,103,2,1,5,22.3,1
+AST-0914,Elevator,Auditorium,Critical,8.3,3,87,1,0,3,6.5,1
+AST-0915,Lab Equipment,Science Block,Critical,0.7,1,15,0,1,1,22.8,1
+AST-0916,Security/CCTV,Block B,High,6.3,2,40,0,0,2,5.2,1
+AST-0917,Civil,Boys Hostel,Critical,2.5,1,292,1,1,2,16.6,1
+AST-0918,Security/CCTV,Science Block,Low,4.8,2,335,2,1,3,4.1,1
+AST-0919,Civil,Boys Hostel,Medium,0.6,1,357,0,1,5,21.3,1
+AST-0920,Civil,Auditorium,Medium,7.2,5,272,3,1,4,22.9,0
+AST-0921,Electrical,Main Library,Medium,8.5,4,158,0,0,2,15.1,1
+AST-0922,Plumbing,Block A,Medium,9.4,5,244,2,1,3,19,1
+AST-0923,Security/CCTV,Boys Hostel,High,9.2,6,282,4,1,2,7,1
+AST-0924,Furniture,Main Library,High,9.6,3,103,1,0,5,20.4,1
+AST-0925,Civil,Block C,Low,4.5,2,148,1,1,1,16.7,0
+AST-0926,Electrical,Block B,High,9.5,6,349,1,0,1,20.4,1
+AST-0927,Civil,Block C,Critical,1.6,1,190,4,0,2,22.4,1
+AST-0928,Security/CCTV,Boys Hostel,Medium,9.8,6,169,1,0,2,15,1
+AST-0929,Civil,Auditorium,High,2.9,1,86,1,1,5,23.2,0
+AST-0930,Lab Equipment,Auditorium,Low,1.8,2,117,0,0,4,21.7,1
+AST-0931,Plumbing,Girls Hostel,Critical,2.9,0,87,0,0,4,12.7,1
+AST-0932,Civil,Science Block,Critical,8.8,6,54,3,0,1,13.1,1
+AST-0933,Electrical,Block B,Medium,8.2,3,200,0,0,3,6.2,1
+AST-0934,Civil,Auditorium,High,8.1,5,57,2,0,1,9.9,1
+AST-0935,Plumbing,Boys Hostel,Medium,6.7,3,194,1,0,3,6.4,1
+AST-0936,Security/CCTV,Science Block,Critical,1,0,322,2,1,4,23.7,0
+AST-0937,Elevator,Girls Hostel,Low,8.4,3,94,2,0,2,6.8,1
+AST-0938,Electrical,Science Block,Low,4.6,1,267,0,1,4,23,0
+AST-0939,HVAC,Science Block,Low,2.8,1,109,2,1,5,18.5,1
+AST-0940,Plumbing,Block A,Medium,2.2,0,179,2,0,5,19.2,1
+AST-0941,Lab Equipment,Auditorium,Medium,2.2,1,204,0,1,4,17.9,1
+AST-0942,Elevator,Girls Hostel,Critical,8.6,6,55,1,0,5,19.3,1
+AST-0943,Plumbing,Block A,Medium,3.6,1,299,2,1,1,12,0
+AST-0944,Furniture,Girls Hostel,High,3.2,2,230,1,0,3,18.8,1
+AST-0945,HVAC,Science Block,Critical,4.1,3,294,3,1,3,23.1,1
+AST-0946,Security/CCTV,Block A,Low,7.7,4,131,1,0,3,12.9,1
+AST-0947,Plumbing,Science Block,High,3.4,1,106,0,0,1,17.8,0
+AST-0948,Elevator,Boys Hostel,Medium,8.4,5,233,0,0,3,9.4,1
+AST-0949,Elevator,Auditorium,High,3.3,2,338,2,0,4,21.3,1
+AST-0950,HVAC,Block A,Medium,1.8,1,187,0,1,4,5.5,0
+AST-0951,Furniture,Science Block,Critical,2.2,1,347,3,1,2,16.3,1
+AST-0952,HVAC,Block C,Critical,0.8,2,208,1,0,1,13.7,0
+AST-0953,Security/CCTV,Auditorium,High,5.9,2,190,4,0,4,8.9,1
+AST-0954,HVAC,Boys Hostel,Low,7.1,3,128,3,1,3,14.2,1
+AST-0955,Furniture,Auditorium,High,8,5,230,1,0,3,12.5,0
+AST-0956,HVAC,Block C,Low,6.4,4,75,4,1,1,20.7,1
+AST-0957,HVAC,Main Library,Critical,5.2,4,264,1,0,1,6,1
+AST-0958,Lab Equipment,Girls Hostel,Critical,6.8,4,327,0,1,2,5.7,1
+AST-0959,Furniture,Main Library,Critical,8.9,4,358,1,2,4,9.1,1
+AST-0960,Furniture,Auditorium,Critical,6.1,3,295,0,0,5,8,1
+AST-0961,Civil,Girls Hostel,High,6.5,4,351,1,0,1,8.3,1
+AST-0962,Elevator,Science Block,Medium,7.5,3,65,1,0,3,16.4,1
+AST-0963,Civil,Girls Hostel,Critical,9.3,4,41,4,1,4,7,1
+AST-0964,Lab Equipment,Girls Hostel,Low,5.7,2,168,3,0,3,23,1
+AST-0965,Electrical,Main Library,Critical,1.6,0,23,2,0,5,13.4,1
+AST-0966,HVAC,Auditorium,Low,4.7,3,94,2,0,1,19.4,0
+AST-0967,Plumbing,Block B,High,2.9,0,148,4,1,4,22.9,0
+AST-0968,Security/CCTV,Block B,Critical,2,2,242,0,0,5,18.1,1
+AST-0969,Civil,Boys Hostel,Medium,9.4,6,201,1,0,2,13.5,1
+AST-0970,Furniture,Auditorium,Low,3.5,2,25,4,0,1,8.9,0
+AST-0971,Plumbing,Science Block,Low,3.2,3,88,4,0,2,14.7,0
+AST-0972,Security/CCTV,Block B,Low,6.1,4,279,0,1,1,22.8,1
+AST-0973,Furniture,Main Library,High,7.9,3,192,3,0,5,15.9,1
+AST-0974,Security/CCTV,Main Library,Medium,0.7,0,296,4,0,4,21.4,1
+AST-0975,Electrical,Science Block,High,7.5,4,43,0,1,4,7.7,1
+AST-0976,Elevator,Block A,Critical,4,1,356,2,1,1,15.9,0
+AST-0977,Electrical,Boys Hostel,Critical,1.3,0,21,0,4,1,4.2,1
+AST-0978,Security/CCTV,Block B,High,9,4,171,0,1,2,10.7,1
+AST-0979,Plumbing,Boys Hostel,Medium,8.6,3,86,2,0,2,10.6,0
+AST-0980,Furniture,Boys Hostel,Medium,0.9,0,322,4,2,3,8.3,0
+AST-0981,Elevator,Block C,Medium,6.9,5,17,1,1,3,10,1
+AST-0982,Lab Equipment,Block C,Critical,8.6,5,68,0,1,3,5.1,1
+AST-0983,Furniture,Main Library,Low,1.4,2,121,4,0,4,16.7,1
+AST-0984,Security/CCTV,Block B,High,1.9,0,35,2,0,2,5.6,0
+AST-0985,Furniture,Block A,Critical,5.5,2,68,1,1,4,23.6,1
+AST-0986,Security/CCTV,Block A,Medium,8.2,4,174,1,0,3,15,1
+AST-0987,Security/CCTV,Boys Hostel,Low,3.1,3,49,0,0,4,17.4,1
+AST-0988,Elevator,Boys Hostel,Critical,9.9,6,97,2,0,1,4.9,1
+AST-0989,HVAC,Block B,Low,7.4,4,302,0,0,2,5.8,1
+AST-0990,Lab Equipment,Science Block,Low,4.3,3,189,1,1,2,18.8,0
+AST-0991,Lab Equipment,Block C,Low,6.5,5,12,4,1,2,21.3,1
+AST-0992,Security/CCTV,Science Block,Low,4,3,34,0,1,1,14,0
+AST-0993,Plumbing,Block A,Medium,2.5,3,298,0,1,4,11,0
+AST-0994,Plumbing,Boys Hostel,Critical,9.1,4,24,0,0,4,18.7,1
+AST-0995,Lab Equipment,Block C,Low,9.3,4,111,1,0,1,4.8,0
+AST-0996,Elevator,Science Block,Low,4.5,1,133,4,0,5,20.3,1
+AST-0997,Security/CCTV,Main Library,Medium,8.4,3,63,0,0,4,16,1
+AST-0998,Security/CCTV,Block A,Critical,3.1,2,145,0,0,5,13.3,1
+AST-0999,Electrical,Block C,Medium,6.5,4,43,0,0,5,11.5,1
+AST-1000,Electrical,Block A,Critical,7.2,4,24,0,0,1,15.1,0
+AST-1001,Lab Equipment,Block B,Medium,8.3,4,241,2,0,4,21.2,1
+AST-1002,Electrical,Science Block,Low,5.8,2,162,1,0,3,21.1,1
+AST-1003,Plumbing,Boys Hostel,Low,6,3,316,4,1,1,9.4,1
+AST-1004,Civil,Science Block,Critical,3.6,2,59,1,1,5,14.2,1
+AST-1005,Elevator,Block B,Medium,7.7,3,332,2,1,3,22.4,1
+AST-1006,Civil,Girls Hostel,Critical,9.3,5,134,4,0,5,22.9,0
+AST-1007,HVAC,Girls Hostel,Critical,6.3,3,59,2,0,5,10,0
+AST-1008,Elevator,Auditorium,Critical,9.7,5,320,4,0,1,22.6,1
+AST-1009,Lab Equipment,Block C,Critical,5.6,2,149,2,0,1,17.2,0
+AST-1010,Elevator,Block A,Medium,5.8,3,229,2,0,5,14,1
+AST-1011,Elevator,Girls Hostel,Low,5.7,2,99,0,1,5,8.6,1
+AST-1012,HVAC,Block A,High,8.7,5,309,2,1,4,6.7,1
+AST-1013,Elevator,Main Library,High,8.7,5,76,1,0,1,20.8,1
+AST-1014,Elevator,Science Block,Medium,1.8,0,355,4,0,5,11.2,0
+AST-1015,Civil,Boys Hostel,High,8.4,5,315,3,0,1,5.4,1
+AST-1016,Security/CCTV,Girls Hostel,Low,9.9,4,153,4,1,2,14.8,0
+AST-1017,Plumbing,Girls Hostel,High,9.3,3,264,3,0,5,23.7,1
+AST-1018,Civil,Auditorium,High,2.4,2,45,3,2,1,6.6,0
+AST-1019,Security/CCTV,Main Library,Low,1.9,1,199,0,1,1,17.1,1
+AST-1020,Plumbing,Girls Hostel,High,8.5,4,340,0,1,5,23.3,1
+AST-1021,Electrical,Science Block,Critical,8.3,4,332,2,0,5,22.9,1
+AST-1022,Elevator,Auditorium,Medium,1.2,1,22,2,0,3,22.1,0
+AST-1023,Furniture,Auditorium,High,0.8,0,215,2,1,4,11.7,1
+AST-1024,Lab Equipment,Block C,High,4,1,64,4,0,4,11,1
+AST-1025,Furniture,Auditorium,Medium,3.1,3,200,4,0,3,6.3,0
+AST-1026,Security/CCTV,Girls Hostel,Medium,4.4,3,213,4,1,2,18.4,1
+AST-1027,Elevator,Block B,Medium,6.4,3,239,1,0,2,4.4,1
+AST-1028,Lab Equipment,Block B,Low,3.9,3,71,0,1,2,8.6,1
+AST-1029,Civil,Block A,Critical,8.6,4,301,3,2,2,12.8,1
+AST-1030,Civil,Main Library,Critical,6.9,3,178,1,0,2,20,1
+AST-1031,Elevator,Block A,Low,3.5,1,208,4,0,5,23,1
+AST-1032,Lab Equipment,Science Block,High,4.3,3,68,3,2,5,15.2,1
+AST-1033,Electrical,Science Block,High,0.5,1,227,0,0,1,6.8,1
+AST-1034,Electrical,Block A,High,1.5,2,150,1,0,4,21.2,0
+AST-1035,Security/CCTV,Science Block,High,8.3,5,344,4,0,4,24,1
+AST-1036,Electrical,Block B,High,4.7,2,40,2,1,2,22.7,0
+AST-1037,Electrical,Block C,Critical,9.4,5,109,1,2,3,16.7,1
+AST-1038,Plumbing,Girls Hostel,Critical,4.8,3,269,0,0,2,14.6,0
+AST-1039,HVAC,Block B,Critical,3.5,1,109,0,0,3,9.7,0
+AST-1040,HVAC,Boys Hostel,Critical,6,4,50,4,1,5,11.4,1
+AST-1041,Security/CCTV,Block A,Critical,8,5,120,3,1,5,20.9,1
+AST-1042,HVAC,Science Block,Medium,1.5,2,173,0,0,2,9,0
+AST-1043,Civil,Boys Hostel,Low,3.8,2,90,3,1,5,13.1,0
+AST-1044,Security/CCTV,Block B,Low,7.4,5,306,3,1,2,23.3,1
+AST-1045,Furniture,Science Block,Medium,6.8,3,165,3,1,3,21.7,1
+AST-1046,Security/CCTV,Girls Hostel,Medium,1.1,1,194,3,1,5,9.9,1
+AST-1047,Plumbing,Auditorium,Critical,5.5,2,224,2,0,2,15.9,0
+AST-1048,Furniture,Block C,Medium,9.3,5,198,0,0,4,13.4,1
+AST-1049,Security/CCTV,Boys Hostel,Medium,5.8,4,94,1,1,2,9.2,0
+AST-1050,Security/CCTV,Block B,Low,4.9,3,194,0,1,2,11.5,1
+AST-1051,Lab Equipment,Block C,Low,5.6,4,319,0,0,1,4.2,1
+AST-1052,Elevator,Block C,Critical,4.2,3,200,1,0,5,14.2,1
+AST-1053,Plumbing,Science Block,Critical,6.7,4,130,0,0,2,15.4,0
+AST-1054,Civil,Block C,Medium,1,0,49,4,1,3,6.8,0
+AST-1055,Civil,Science Block,Critical,9.3,4,173,3,0,4,12,1
+AST-1056,Plumbing,Girls Hostel,Low,0.8,1,11,1,1,5,17.7,0
+AST-1057,Furniture,Block A,Critical,5.3,2,132,2,1,2,13.7,1
+AST-1058,Security/CCTV,Block C,High,2.6,3,291,1,0,4,20.6,1
+AST-1059,Civil,Block C,Critical,8.6,5,47,1,0,1,10.2,1
+AST-1060,Elevator,Science Block,Critical,6,2,144,4,1,2,12,1
+AST-1061,Elevator,Block C,Low,1.3,2,251,3,1,2,5,0
+AST-1062,HVAC,Girls Hostel,Medium,7,4,107,2,0,4,12.9,1
+AST-1063,Elevator,Boys Hostel,Medium,9.7,4,243,3,0,1,22,1
+AST-1064,Plumbing,Girls Hostel,High,8.5,3,163,2,0,3,8.1,1
+AST-1065,HVAC,Science Block,Medium,1.7,2,254,0,0,3,11.2,0
+AST-1066,Lab Equipment,Girls Hostel,Critical,3.9,2,91,3,0,5,17.1,0
+AST-1067,Elevator,Main Library,Low,9.1,6,197,4,0,4,11,1
+AST-1068,Civil,Boys Hostel,Medium,2.7,2,118,1,1,5,20.8,0
+AST-1069,Furniture,Block A,Medium,5.1,2,218,0,1,5,13.4,1
+AST-1070,Security/CCTV,Boys Hostel,Low,7.6,5,337,2,1,5,9.5,1
+AST-1071,Civil,Block A,High,7.3,3,89,2,0,2,4.9,1
+AST-1072,Plumbing,Science Block,High,3.7,0,114,4,1,5,10.7,0
+AST-1073,Lab Equipment,Block B,High,4.2,3,345,3,0,1,7,1
+AST-1074,HVAC,Block C,Medium,8.3,4,75,2,0,5,4.7,1
+AST-1075,Electrical,Block B,Critical,7.4,4,81,4,1,3,10.3,1
+AST-1076,Furniture,Science Block,Critical,1.1,1,294,3,0,3,6.9,1
+AST-1077,Civil,Girls Hostel,Low,5.7,2,154,0,0,4,19.8,1
+AST-1078,HVAC,Block A,Low,8.7,3,324,1,1,5,9.8,1
+AST-1079,Furniture,Science Block,High,1.7,0,223,2,1,1,19,1
+AST-1080,Elevator,Boys Hostel,Low,3.7,2,219,1,0,5,11.6,1
+AST-1081,Security/CCTV,Main Library,Medium,0.9,1,197,4,0,3,11.3,0
+AST-1082,Lab Equipment,Science Block,Low,7.4,4,155,1,1,3,22.8,1
+AST-1083,Plumbing,Main Library,Low,3,2,248,3,0,2,18.1,0
+AST-1084,Lab Equipment,Block B,Critical,4.7,1,187,0,1,4,11.8,1
+AST-1085,Furniture,Boys Hostel,Medium,9.6,4,241,2,1,4,12.3,1
+AST-1086,Plumbing,Science Block,Low,1.7,1,266,2,2,4,8.9,1
+AST-1087,HVAC,Main Library,High,2,2,240,2,1,3,16.2,1
+AST-1088,Elevator,Block C,Critical,3.5,2,238,0,0,4,5,0
+AST-1089,Electrical,Science Block,Critical,7.8,2,281,1,1,3,10,0
+AST-1090,Plumbing,Block C,Medium,6.8,3,75,3,1,2,9.2,1
+AST-1091,Security/CCTV,Science Block,High,0.7,1,122,4,2,4,21.5,1
+AST-1092,Security/CCTV,Girls Hostel,Critical,3.9,2,100,4,0,3,20.1,1
+AST-1093,Security/CCTV,Main Library,Medium,5.1,1,176,1,0,3,16.8,1
+AST-1094,Elevator,Block B,Low,3.1,3,252,2,1,1,8,0
+AST-1095,Lab Equipment,Block A,Critical,7.6,4,345,4,0,5,11.7,1
+AST-1096,Electrical,Science Block,High,2.5,1,358,3,0,3,21.5,1
+AST-1097,Civil,Auditorium,Low,1.8,2,316,3,1,4,14.6,1
+AST-1098,Civil,Block A,High,3,1,224,4,1,4,12,1
+AST-1099,Furniture,Auditorium,Critical,3.9,2,126,2,2,3,7.7,0
+AST-1100,Lab Equipment,Boys Hostel,High,1.2,0,173,2,2,3,7.1,0
+AST-1101,Electrical,Boys Hostel,Critical,6.7,3,224,3,0,3,19.8,1
+AST-1102,Security/CCTV,Block C,Critical,4.3,2,70,0,1,1,15.5,0
+AST-1103,Security/CCTV,Auditorium,Critical,4.4,4,39,3,2,1,16.4,1
+AST-1104,Plumbing,Science Block,Low,9.4,5,137,3,0,3,9,1
+AST-1105,Plumbing,Science Block,High,9.1,5,283,4,1,4,10,1
+AST-1106,Lab Equipment,Block C,High,2.1,0,13,3,1,3,10.1,1
+AST-1107,Elevator,Block C,High,2.6,3,211,0,1,1,12.1,1
+AST-1108,Plumbing,Block A,High,8.5,3,112,0,0,4,4.8,1
+AST-1109,Lab Equipment,Boys Hostel,Low,6.1,3,53,4,0,2,20.1,1
+AST-1110,Electrical,Main Library,Critical,5.6,2,102,1,1,3,12.3,0
+AST-1111,Civil,Auditorium,Low,5.2,1,289,2,0,2,12,1
+AST-1112,Security/CCTV,Auditorium,Medium,7,2,275,3,0,5,6.9,1
+AST-1113,Civil,Main Library,Critical,6.3,5,201,0,0,4,11.6,1
+AST-1114,Lab Equipment,Auditorium,Critical,6.5,3,60,2,1,3,23.5,1
+AST-1115,HVAC,Boys Hostel,Low,5,4,334,2,2,5,8.7,1
+AST-1116,Civil,Girls Hostel,High,4.2,3,218,3,1,2,10.4,0
+AST-1117,Security/CCTV,Block B,Medium,7.1,2,265,3,1,2,23.3,0
+AST-1118,Elevator,Block C,High,8.3,5,201,4,0,1,6.6,1
+AST-1119,Plumbing,Block A,Critical,4.5,2,149,0,0,1,5.2,0
+AST-1120,Elevator,Boys Hostel,High,5.3,1,253,1,1,1,20.9,1
+AST-1121,Furniture,Block C,Medium,7.4,4,31,4,1,5,19.5,1
+AST-1122,Electrical,Girls Hostel,Medium,7.1,2,210,0,1,5,16,1
+AST-1123,Elevator,Science Block,High,0.6,1,131,3,1,3,15.6,0
+AST-1124,Plumbing,Block A,Low,6.9,2,161,1,0,1,4.9,1
+AST-1125,Lab Equipment,Block A,Medium,5.7,3,173,0,0,5,23.7,1
+AST-1126,Elevator,Block A,Critical,5.3,4,186,2,0,3,14.2,1
+AST-1127,HVAC,Science Block,Medium,5,4,179,1,0,3,9.8,0
+AST-1128,Lab Equipment,Boys Hostel,Medium,8.3,4,111,4,0,2,6.3,1
+AST-1129,HVAC,Science Block,Medium,1.6,1,309,2,0,2,12.3,1
+AST-1130,HVAC,Auditorium,Medium,8.1,5,313,2,1,2,4.5,1
+AST-1131,HVAC,Main Library,Medium,5.5,2,248,1,1,4,17.8,1
+AST-1132,Lab Equipment,Girls Hostel,Medium,2.9,1,294,2,0,2,5.7,0
+AST-1133,Elevator,Block B,Low,3,3,141,4,0,1,15.7,0
+AST-1134,HVAC,Main Library,Critical,9.3,4,268,1,0,2,12,1
+AST-1135,Furniture,Block C,High,1,0,244,1,2,4,19.1,1
+AST-1136,Electrical,Girls Hostel,Medium,5.9,3,168,3,1,5,9.2,1
+AST-1137,Furniture,Block B,Critical,3.7,3,160,2,0,2,19.7,0
+AST-1138,Civil,Boys Hostel,High,0.8,0,121,3,1,5,17.5,0
+AST-1139,HVAC,Science Block,Low,8,5,17,4,0,2,14.7,0
+AST-1140,Furniture,Auditorium,Critical,2.1,1,314,3,1,1,22.2,1
+AST-1141,Electrical,Science Block,Critical,3.1,0,268,3,2,3,15.5,1
+AST-1142,Elevator,Auditorium,Medium,3.7,2,10,0,0,4,4.5,1
+AST-1143,Security/CCTV,Science Block,Low,4.8,2,352,4,0,2,8.4,0
+AST-1144,Lab Equipment,Auditorium,Medium,4.9,4,201,3,0,3,22.1,1
+AST-1145,Elevator,Boys Hostel,Critical,1.2,0,296,0,0,3,11,0
+AST-1146,Lab Equipment,Block B,Medium,6.4,2,200,1,0,2,7,1
+AST-1147,Civil,Main Library,Critical,8.3,5,208,1,0,4,7.3,1
+AST-1148,Lab Equipment,Auditorium,Medium,6,2,25,1,0,1,5.4,0
+AST-1149,Furniture,Auditorium,Medium,7.6,5,283,3,0,2,5.6,1
+AST-1150,Lab Equipment,Main Library,Low,8.6,5,283,0,0,1,14.7,1
+AST-1151,HVAC,Girls Hostel,Low,4.3,1,52,0,1,4,19.1,0
+AST-1152,Elevator,Main Library,Low,3.7,1,160,3,0,1,5.2,1
+AST-1153,HVAC,Science Block,Critical,2.7,1,62,1,0,2,22.6,1
+AST-1154,HVAC,Block B,Low,6.2,2,250,2,0,3,9.9,1
+AST-1155,Elevator,Girls Hostel,High,1.7,1,156,4,0,5,20.3,1
+AST-1156,Plumbing,Block B,High,5.9,3,77,4,1,2,12.6,0
+AST-1157,Civil,Block A,Low,9.6,4,74,3,0,4,15,1
+AST-1158,Elevator,Main Library,Critical,4.7,3,109,3,0,2,7,1
+AST-1159,HVAC,Science Block,Low,2.3,1,107,2,1,5,22,1
+AST-1160,HVAC,Block C,High,7,5,297,0,0,2,21.4,1
+AST-1161,Elevator,Science Block,Critical,2.9,3,23,1,1,4,10.7,0
+AST-1162,Security/CCTV,Block A,High,3.1,2,317,0,0,3,5.3,0
+AST-1163,Lab Equipment,Auditorium,Low,2.2,0,119,4,0,3,13.5,0
+AST-1164,Furniture,Block A,High,6.8,4,208,2,0,5,15.1,1
+AST-1165,HVAC,Block A,Medium,5.3,2,309,0,1,4,23.4,1
+AST-1166,Elevator,Block B,Low,3,3,65,0,0,1,18.1,1
+AST-1167,Electrical,Science Block,Low,4.3,2,82,0,1,4,11.9,0
+AST-1168,Civil,Main Library,Critical,4.9,3,103,0,0,1,13.4,0
+AST-1169,Furniture,Auditorium,Low,2.7,1,337,3,1,5,13.2,0
+AST-1170,Elevator,Main Library,Low,7.6,4,250,3,1,1,21.5,1
+AST-1171,Lab Equipment,Boys Hostel,Low,2.6,0,224,0,0,2,16.8,0
+AST-1172,Furniture,Girls Hostel,Medium,9.5,5,34,4,0,5,8,1
+AST-1173,Security/CCTV,Block A,Critical,1.7,2,118,0,1,2,9.7,0
+AST-1174,Elevator,Main Library,Medium,9.3,3,92,4,0,5,19.6,1
+AST-1175,Plumbing,Block C,Low,9.5,3,291,2,0,4,9.7,1
+AST-1176,Plumbing,Auditorium,High,4.5,1,297,1,2,4,15.1,1
+AST-1177,Furniture,Block C,Medium,0.6,0,304,3,0,4,10.8,0
+AST-1178,HVAC,Boys Hostel,Critical,1.9,1,288,0,2,1,17.1,1
+AST-1179,Electrical,Girls Hostel,Low,4,1,201,1,0,5,6.4,1
+AST-1180,Furniture,Block B,Low,9.2,5,292,3,2,2,12.4,1
+AST-1181,Furniture,Block A,High,9.6,5,350,1,0,3,7.3,1
+AST-1182,Furniture,Boys Hostel,Critical,4.9,3,322,3,1,1,8.5,0
+AST-1183,Elevator,Block A,Medium,5,3,342,0,0,3,12.1,1
+AST-1184,Electrical,Girls Hostel,High,5.2,4,263,4,0,5,7.6,1
+AST-1185,Furniture,Main Library,High,0.8,0,241,0,0,1,13.9,0
+AST-1186,Civil,Block A,Medium,6.7,3,126,3,0,2,15.6,0
+AST-1187,HVAC,Block C,Critical,5.6,2,260,3,1,1,16.6,0
+AST-1188,Security/CCTV,Block A,Low,8.7,5,53,2,0,2,12.9,1
+AST-1189,Lab Equipment,Auditorium,Medium,6.1,3,20,3,0,3,19.8,1
+AST-1190,Security/CCTV,Block C,High,7.1,5,180,1,0,3,16.2,1
+AST-1191,Elevator,Block A,Critical,2.8,1,230,4,3,1,20.4,1
+AST-1192,Electrical,Auditorium,Medium,1.2,1,40,0,0,3,16.7,0
+AST-1193,Civil,Boys Hostel,Critical,9.1,3,147,4,0,4,13.1,1
+AST-1194,Electrical,Auditorium,High,7.3,4,153,2,0,1,18,1
+AST-1195,Civil,Girls Hostel,Low,8.4,5,226,4,0,4,15.1,1
+AST-1196,Security/CCTV,Block A,Medium,2.7,3,132,3,0,3,6.2,1
+AST-1197,Plumbing,Boys Hostel,Medium,8.1,3,25,3,0,4,11.8,1
+AST-1198,Electrical,Girls Hostel,Critical,6,2,135,1,0,1,9,1
+AST-1199,Lab Equipment,Block A,Critical,2.3,2,237,3,1,3,23.7,1
+AST-1200,Plumbing,Boys Hostel,Medium,1.5,1,288,4,0,4,14.5,1

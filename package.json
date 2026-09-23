@@ -1,0 +1,25 @@
+{
+  "name": "campus-infrastructure-maintenance-system",
+  "version": "1.0.0",
+  "description": "AI-Based Campus Infrastructure Maintenance System",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "node server/db/seed.js",
+    "test": "node server/test_all.js"
+  },
+  "keywords": [
+    "campus-maintenance",
+    "predictive-maintenance",
+    "ai",
+    "machine-learning",
+    "random-forest",
+    "react",
+    "express"
+  ],
+  "author": "Department of Computer Science and Business Systems",
+  "license": "ISC"
+}

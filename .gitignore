@@ -1,0 +1,9 @@
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/assets/*.map
+.DS_Store
+*.log
+cloudflared.exe
+.env
+.env.local
