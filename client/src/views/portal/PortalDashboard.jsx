@@ -335,7 +335,7 @@ export function PortalDashboard({
 
             <VitLogo className="h-8" />
             <div className="h-6 w-px bg-white/30 mx-1 hidden sm:block"></div>
-            <AILogo size="sm" variant="badge" className="hidden sm:inline-flex" />
+            <AILogo size="sm" variant="badge" className="inline-flex" />
 
             <div className="hidden sm:flex items-center gap-2 text-blue-100">
               <button 
@@ -422,9 +422,16 @@ export function PortalDashboard({
             </div>
           </div>
 
-          {/* Center Title */}
-          <div className="hidden lg:block text-xs font-semibold text-blue-100 tracking-wider">
-            CampusCare AI • Facilities Maintenance
+          {/* Center Title & AI Header Trigger */}
+          <div className="flex items-center gap-3">
+            <button
+              onClick={onOpenAIAssistant}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white border border-blue-400/40 shadow-xs hover:shadow-blue-500/25 transition cursor-pointer text-xs font-bold"
+            >
+              <AILogo size="xs" variant="icon" />
+              <span>AI Assistant</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-300 animate-pulse"></span>
+            </button>
           </div>
 
           {/* Right Section: Reputation Pill & Profile */}
@@ -578,7 +585,32 @@ export function PortalDashboard({
         {sidebarOpen && (
           <aside className="w-56 bg-white border-r border-slate-200 shrink-0 flex flex-col justify-between overflow-y-auto z-20">
             <div className="py-2">
-              <div className="px-4 py-2 text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+              {/* CampusCare AI Sidebar Identity */}
+              <div className="mx-2 mb-2 p-2.5 bg-slate-900 rounded-xl text-white shadow-xs">
+                <div className="flex items-center gap-2">
+                  <AILogo size="xs" variant="icon" />
+                  <div className="leading-tight">
+                    <span className="text-[11px] font-bold text-white block">CampusCare AI</span>
+                    <span className="text-[9px] text-cyan-300 font-mono">v2.4 Autonomous Triage</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Direct AI Diagnostic Assistant Action */}
+              <div className="px-2 mb-2">
+                <button
+                  onClick={() => onOpenAIAssistant && onOpenAIAssistant()}
+                  className="w-full flex items-center justify-between px-3 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 text-blue-700 hover:from-blue-100 hover:to-indigo-100 transition cursor-pointer"
+                >
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                    <span>AI Assistant</span>
+                  </div>
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                </button>
+              </div>
+
+              <div className="px-4 py-1 text-[10px] uppercase font-bold text-slate-400 tracking-wider">
                 {currentUser?.role === 'admin' ? 'Admin Controls' : currentUser?.role === 'technician' ? 'Technician Tools' : 'Campus Services'}
               </div>
 

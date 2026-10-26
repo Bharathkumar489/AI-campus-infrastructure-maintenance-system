@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { Navbar } from './components/Navbar';
-import { InstitutionalHome } from './views/home/InstitutionalHome';
 import { LoginPage } from './views/auth/LoginPage';
 import { PortalDashboard } from './views/portal/PortalDashboard';
 import { AIAssistantView } from './views/assistant/AIAssistantView';
@@ -18,8 +17,8 @@ import { AnalyticsReports } from './views/analytics/AnalyticsReports';
 function MainLayout() {
   const { currentUser, switchRole } = useAuth();
   
-  // Navigation states
-  const [currentRoute, setCurrentRoute] = useState('home'); // 'home' | 'login' | 'portal' | 'ai_assistant' | 'other'
+  // Navigation states - Default directly to PortalDashboard
+  const [currentRoute, setCurrentRoute] = useState('portal'); // 'portal' | 'login' | 'ai_assistant' | 'other'
   const [loginRole, setLoginRole] = useState('student');
   const [activeTab, setActiveTab] = useState('portal'); // for internal sub-views
   const [selectedRequestId, setSelectedRequestId] = useState(null);
@@ -35,14 +34,12 @@ function MainLayout() {
       if (pathname.includes('/login')) {
         setCurrentRoute('login');
         setLoginRole(roleParam);
-      } else if (pathname.includes('/portal')) {
-        setCurrentRoute('portal');
-        if (roleParam) switchRole(roleParam === 'admin' ? 'admin' : roleParam === 'technician' ? 'technician' : 'requester');
       } else if (pathname.includes('/ai-assistant')) {
         setCurrentRoute('ai_assistant');
       } else {
-        // default /
-        setCurrentRoute('home');
+        // default / and /portal -> loads Portal Dashboard directly
+        setCurrentRoute('portal');
+        if (roleParam) switchRole(roleParam === 'admin' ? 'admin' : roleParam === 'technician' ? 'technician' : 'requester');
       }
     };
 
@@ -54,19 +51,16 @@ function MainLayout() {
   // Helpers to push state and set view
   const navigateTo = (route, role = null, tab = null) => {
     setSelectedRequestId(null);
-    if (route === 'home') {
-      setCurrentRoute('home');
-      if (window.history.pushState) window.history.pushState({}, '', '/');
+    if (route === 'home' || route === 'portal') {
+      setCurrentRoute('portal');
+      const targetRole = role || (currentUser?.role === 'admin' ? 'admin' : currentUser?.role === 'technician' ? 'technician' : 'student');
+      if (tab) setActiveTab(tab);
+      if (window.history.pushState) window.history.pushState({}, '', `/`);
     } else if (route === 'login') {
       const targetRole = role || 'student';
       setLoginRole(targetRole);
       setCurrentRoute('login');
       if (window.history.pushState) window.history.pushState({}, '', `/login?role=${targetRole}`);
-    } else if (route === 'portal') {
-      const targetRole = role || (currentUser?.role === 'admin' ? 'admin' : currentUser?.role === 'technician' ? 'technician' : 'student');
-      setCurrentRoute('portal');
-      if (tab) setActiveTab(tab);
-      if (window.history.pushState) window.history.pushState({}, '', `/portal?role=${targetRole}`);
     } else if (route === 'ai_assistant') {
       setCurrentRoute('ai_assistant');
       if (window.history.pushState) window.history.pushState({}, '', '/ai-assistant');
@@ -86,7 +80,7 @@ function MainLayout() {
     setActiveTab('new_request');
   };
 
-  // 1. Dedicated LoginPage matching Screenshots 2, 3, 4
+  // 1. Dedicated LoginPage
   if (currentRoute === 'login') {
     return (
       <LoginPage
@@ -94,24 +88,12 @@ function MainLayout() {
         onLoginSuccess={(roleKey, persona) => {
           navigateTo('portal', persona);
         }}
-        onGoHome={() => navigateTo('home')}
+        onGoHome={() => navigateTo('portal')}
       />
     );
   }
 
-  // 2. Dedicated Institutional Home matching Screenshot 1
-  if (currentRoute === 'home') {
-    return (
-      <InstitutionalHome
-        onSelectRole={(selectedRole) => {
-          navigateTo('login', selectedRole);
-        }}
-        onOpenAIAssistant={() => navigateTo('ai_assistant')}
-      />
-    );
-  }
-
-  // 3. AI Diagnostic Assistant
+  // 2. AI Diagnostic Assistant
   if (currentRoute === 'ai_assistant') {
     return (
       <AIAssistantView
@@ -121,11 +103,11 @@ function MainLayout() {
     );
   }
 
-  // 4. Portal Dashboard matching Screenshot 5
-  if (currentRoute === 'portal' && !selectedRequestId) {
+  // 3. Main VTOP Portal Dashboard (Primary Landing Experience)
+  if ((currentRoute === 'portal' || currentRoute === 'home') && !selectedRequestId) {
     return (
       <PortalDashboard
-        onGoHome={() => navigateTo('home')}
+        onGoHome={() => navigateTo('portal')}
         onOpenAIAssistant={() => navigateTo('ai_assistant')}
         onNewRequest={() => { setCurrentRoute('other'); setActiveTab('new_request'); }}
         onOpenAnalytics={() => { setCurrentRoute('other'); setActiveTab('analytics'); }}
@@ -136,7 +118,7 @@ function MainLayout() {
     );
   }
 
-  // 5. Specialized Views (Ticket Detail, New Request, Assets, Techs, Analytics)
+  // 4. Specialized Views (Ticket Detail, New Request, Assets, Techs, Analytics)
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
       {/* Top Navbar */}
@@ -144,8 +126,7 @@ function MainLayout() {
         activeTab={activeTab}
         setActiveTab={(tab) => {
           setSelectedRequestId(null);
-          if (tab === 'home') navigateTo('home');
-          else if (tab === 'portal') navigateTo('portal');
+          if (tab === 'home' || tab === 'portal') navigateTo('portal');
           else {
             setCurrentRoute('other');
             setActiveTab(tab);
