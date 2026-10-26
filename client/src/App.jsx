@@ -121,7 +121,10 @@ function MainLayout() {
         onLoginSuccess={(roleKey, persona) => {
           navigateTo('portal', persona);
         }}
-        onGoHome={goBack}
+        onGoHome={() => {
+          if (!currentUser) switchRole('student');
+          navigateTo('portal');
+        }}
       />
     );
   }

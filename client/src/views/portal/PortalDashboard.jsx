@@ -47,7 +47,6 @@ import { useAuth } from '../../context/AuthContext';
 import { api } from '../../services/api';
 import { TechnicianAssignModal } from '../admin/TechnicianAssignModal';
 import { CampusMapView } from '../map/CampusMapView';
-import { ReputationPill } from '../../components/ReputationPill';
 import { Modal } from '../../components/Modal';
 import { AssetManagement } from '../admin/AssetManagement';
 import { TechnicianManagement } from '../admin/TechnicianManagement';
@@ -61,7 +60,8 @@ const ANNOUNCEMENTS = [
 ];
 
 export function PortalDashboard({ 
-  onGoHome, 
+  onGoHome,
+  onLogout, 
   onOpenAIAssistant, 
   onNewRequest, 
   onOpenAnalytics, 
@@ -70,6 +70,29 @@ export function PortalDashboard({
   onOpenTechs
 }) {
   const { currentUser, switchRole, logout } = useAuth();
+
+  const handleGoHome = () => {
+    setActiveMenuTab(currentUser?.role === 'admin' ? 'admin_requests' : currentUser?.role === 'technician' ? 'tech_tasks' : 'my_requests');
+    setSearchQuery('');
+    setFilterStatus('all');
+    setBuildingFilter('all');
+    setCategoryFilter('all');
+    setTriageRequestId(null);
+    setVerifyingRequest(null);
+    setCompletingTechTask(null);
+    setActiveInfoModal(null);
+    if (onGoHome) onGoHome();
+  };
+
+  const handleSignOut = () => {
+    logout();
+    if (onLogout) {
+      onLogout();
+    } else {
+      if (window.history.pushState) window.history.pushState({}, '', '/login');
+      window.location.reload();
+    }
+  };
   
   // Navigation & Drawer States
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -262,7 +285,7 @@ export function PortalDashboard({
         feedbackRating,
         feedbackComments || 'Satisfactory repair verified on-site.'
       );
-      alert(`Thank you! Verification confirmed, 5-star rating recorded, and +15 Reputation PTS awarded!`);
+      alert(`Thank you! Verification confirmed and 5-star rating recorded.`);
       setVerifyingRequest(null);
       setFeedbackRating(5);
       setFeedbackComments('');
@@ -333,14 +356,12 @@ export function PortalDashboard({
               <Menu className="w-5 h-5" />
             </button>
 
-            <VitLogo className="h-8" />
+            <button type="button" onClick={handleGoHome} className="cursor-pointer inline-flex items-center" title="Go to Dashboard Home"><VitLogo className="h-8" /></button>
             <div className="h-6 w-px bg-white/30 mx-1 hidden sm:block"></div>
             <AILogo size="sm" variant="badge" className="inline-flex" />
 
             <div className="hidden sm:flex items-center gap-2 text-blue-100">
-              <button 
-                onClick={onGoHome}
-                title="Go to Home" 
+              <button onClick={handleGoHome} title="Go to Home" 
                 className="p-1 rounded hover:text-white hover:bg-white/10 transition cursor-pointer"
               >
                 <Home className="w-4 h-4" />
@@ -436,8 +457,6 @@ export function PortalDashboard({
 
           {/* Right Section: Reputation Pill & Profile */}
           <div className="flex items-center gap-3">
-            <ReputationPill className="bg-white/15 text-white border-white/25 hover:bg-white/25" />
-
             <div className="relative">
               <button
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
@@ -470,7 +489,7 @@ export function PortalDashboard({
 
                   <div className="pt-2">
                     <button
-                      onClick={() => { logout(); onGoHome(); }}
+                      onClick={handleSignOut}
                       className="w-full text-left px-2 py-1.5 text-rose-600 hover:bg-rose-50 rounded font-semibold flex items-center gap-1.5 cursor-pointer"
                     >
                       <LogOut className="w-3.5 h-3.5" /> Sign Out
@@ -481,7 +500,7 @@ export function PortalDashboard({
             </div>
 
             <button
-              onClick={() => { logout(); onGoHome(); }}
+              onClick={handleSignOut}
               title="Sign Out"
               className="p-1.5 rounded hover:bg-white/15 text-blue-100 hover:text-white transition cursor-pointer"
             >
@@ -942,7 +961,7 @@ export function PortalDashboard({
                                         className="apple-pill px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full text-xs font-semibold transition shadow-xs flex items-center gap-1.5 cursor-pointer"
                                       >
                                         <Star className="w-3.5 h-3.5 text-amber-300 fill-amber-300" />
-                                        <span>Verify & Rate Repair (+15 PTS)</span>
+                                        <span>Verify & Rate Repair</span>
                                       </button>
                                     )}
 
@@ -1451,7 +1470,7 @@ export function PortalDashboard({
         <Modal
           isOpen={true}
           onClose={() => setVerifyingRequest(null)}
-          title="Verify Completed Repair & Claim +15 PTS"
+          title="Verify Completed Repair"
         >
           <form onSubmit={handleRequesterVerifySubmit} className="space-y-4 text-xs">
             <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
@@ -1511,7 +1530,7 @@ export function PortalDashboard({
                 className="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded shadow-sm flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
               >
                 <CheckCircle className="w-4 h-4" />
-                <span>{submittingFeedback ? 'Verifying...' : 'Confirm Verification (+15 PTS)'}</span>
+                <span>{submittingFeedback ? 'Verifying...' : 'Confirm Verification'}</span>
               </button>
             </div>
           </form>
@@ -1597,7 +1616,7 @@ export function PortalDashboard({
             <div className="space-y-2">
               <h5 className="font-bold text-slate-900">Role Guidelines:</h5>
               <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                <li><strong>Students & Teachers:</strong> Report issues with room details & photos. Check campus feed to upvote existing issues instead of filing duplicates. Verify completed repairs to award stars and earn +15 reputation points.</li>
+                <li><strong>Students & Teachers:</strong> Report issues with room details & photos. Check campus feed to upvote existing issues instead of filing duplicates. Verify completed repairs to award stars and confirm resolution.</li>
                 <li><strong>Field Technicians:</strong> Check your assigned queue. Click "Start Work" upon arrival on-site and "Submit Repair Proof" upon testing the equipment.</li>
                 <li><strong>Administrators:</strong> Full authority to triage tickets, review ML technician matches, override priorities, and monitor asset health.</li>
               </ul>

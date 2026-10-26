@@ -90,6 +90,9 @@ export function AuthProvider({ children }) {
     if (currentUser) {
       localStorage.setItem('agy_campus_user', JSON.stringify(currentUser));
       refreshNotificationCount();
+    } else {
+      localStorage.removeItem('agy_campus_user');
+      setNotificationCount(0);
     }
   }, [currentUser]);
 
@@ -117,7 +120,8 @@ export function AuthProvider({ children }) {
   };
 
   const logout = () => {
-    setCurrentUser(PRESET_USERS.requester);
+    localStorage.removeItem('agy_campus_user');
+    setCurrentUser(null);
   };
 
   return (

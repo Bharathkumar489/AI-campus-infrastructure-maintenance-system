@@ -148,7 +148,7 @@ export function NewRequest({ onSuccess, initialAssetCode, onCancel }) {
     setIsUpvoting(true);
     try {
       const res = await api.upvoteRequest(duplicateInfo.matchedRequest.request_id, currentUser.user_id);
-      setUpvoteMessage(`✓ Upvote Registered! Priority boosted to ${res.new_priority_score.toFixed(1)} (${res.new_priority_level}). You earned +5 PTS!`);
+      setUpvoteMessage(`✓ Upvote Registered! Priority boosted to ${res.new_priority_score.toFixed(1)} (${res.new_priority_level}). Community priority updated!`);
       setTimeout(() => {
         setDuplicateInfo(null);
         if (onSuccess) onSuccess(duplicateInfo.matchedRequest.request_id);
@@ -364,7 +364,7 @@ export function NewRequest({ onSuccess, initialAssetCode, onCancel }) {
               className="flex items-center gap-1.5 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs rounded-lg shadow-sm transition cursor-pointer disabled:opacity-50"
             >
               <ThumbsUp className="w-3.5 h-3.5" />
-              <span>{isUpvoting ? 'Recording Upvote...' : 'Upvote Existing Issue (+5 PTS)'}</span>
+              <span>{isUpvoting ? 'Recording Upvote...' : 'Upvote Existing Issue'}</span>
             </button>
           </div>
 
