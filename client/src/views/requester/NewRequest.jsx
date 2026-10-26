@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
+import {
+  ArrowLeft,
   Send, 
   Upload, 
   Sparkles, 
@@ -25,46 +26,7 @@ import { useAuth } from '../../context/AuthContext';
 import { RiskBadge } from '../../components/RiskBadge';
 import { PriorityBadge } from '../../components/PriorityBadge';
 
-const DEMO_SCENARIOS = [
-  {
-    label: 'Electrical Sparking (Critical)',
-    icon: Zap,
-    accent: 'border-rose-300 bg-rose-50/50 text-rose-800 hover:bg-rose-100',
-    title: 'Main LT distribution panel sparking and buzzing loudly',
-    description: 'The main electrical switchboard on the ground floor is emitting continuous electrical sparks and a strong burning plastic odor. Sparks are visible near the circuit breaker.',
-    location: 'Block A / Ground Floor Electrical Room',
-    assetCode: 'PANEL-MAIN-A'
-  },
-  {
-    label: 'AC Breakdown in Lab 1 (High)',
-    icon: Flame,
-    accent: 'border-amber-300 bg-amber-50/50 text-amber-900 hover:bg-amber-100',
-    title: 'AC unit blowing warm air with severe compressor vibration',
-    description: 'The Daikin split air conditioner in Computing Lab 1 is blowing warm air and vibrating noisily with water condensation dripping onto desks. 60 students currently attending programming lab.',
-    location: 'Block A / Room 203 (Computing Lab 1)',
-    assetCode: 'AC-BLOCKA-203'
-  },
-  {
-    label: 'Water Booster Pump Leak (High)',
-    icon: AlertTriangle,
-    accent: 'border-blue-300 bg-blue-50/50 text-blue-900 hover:bg-blue-100',
-    title: 'Hydro booster pump pipe burst and water flooding',
-    description: 'High pressure water booster pump in the pump house basement is leaking heavily from the flange coupling with water gushing across the basement floor.',
-    location: 'Boys Hostel / Pump House 1 Basement',
-    assetCode: 'PUMP-HYDRO-01'
-  },
-  {
-    label: 'Loose Chair Armrest (Low)',
-    icon: CheckCircle2,
-    accent: 'border-slate-300 bg-slate-50 text-slate-800 hover:bg-slate-100',
-    title: 'Student desk chair armrest screw loose',
-    description: 'One student wooden chair near the back of classroom 102 has a loose armrest screw. Still usable but slightly wobbly.',
-    location: 'Block B / Room 102',
-    assetCode: ''
-  }
-];
-
-export function NewRequest({ onSuccess, initialAssetCode }) {
+export function NewRequest({ onSuccess, initialAssetCode, onCancel }) {
   const { currentUser } = useAuth();
   const [assets, setAssets] = useState([]);
   
@@ -222,25 +184,6 @@ export function NewRequest({ onSuccess, initialAssetCode }) {
     }
   };
 
-  const handleLoadScenario = (scenario) => {
-    setTitle(scenario.title);
-    setDescription(scenario.description);
-    setLocation(scenario.location);
-    setAiManualOverride(false);
-
-    // Find and set asset if known
-    if (scenario.assetCode) {
-      const found = assets.find(a => a.asset_code === scenario.assetCode);
-      if (found) {
-        setSelectedAssetId(found.asset_id);
-        setCategory(found.asset_type);
-      }
-    }
-
-    // Run AI analysis immediately for this scenario
-    runAIAnalysis(`${scenario.title} ${scenario.description}`, scenario.location);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!title || !description) {
@@ -385,34 +328,6 @@ export function NewRequest({ onSuccess, initialAssetCode }) {
         <p className="text-sm text-slate-500 max-w-2xl font-normal leading-relaxed">
           Describe the defect or attach a photo. CampusCare AI automatically identifies the equipment, links the campus asset code, and estimates operational failure risk.
         </p>
-      </div>
-
-      {/* 4 1-Click Evaluation Scenarios */}
-      <div className="apple-card p-5 rounded-2xl border border-slate-200/80 bg-white shadow-xs">
-        <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-3">
-          Instant Evaluation Scenarios (Click to test AI Detection):
-        </span>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {DEMO_SCENARIOS.map((scen, idx) => {
-            const Icon = scen.icon;
-            return (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => handleLoadScenario(scen)}
-                className="apple-card apple-card-hover flex items-start gap-2.5 p-3.5 rounded-2xl border border-slate-200/70 text-left transition-all cursor-pointer bg-slate-50/60 hover:bg-white"
-              >
-                <div className="w-7 h-7 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 shrink-0 mt-0.5">
-                  <Icon className="w-3.5 h-3.5" />
-                </div>
-                <div className="leading-tight">
-                  <div className="text-xs font-semibold text-slate-800">{scen.label}</div>
-                  <div className="text-[11px] text-slate-500 mt-0.5 line-clamp-1">{scen.title}</div>
-                </div>
-              </button>
-            );
-          })}
-        </div>
       </div>
 
       {/* Duplicate Ticket Alert Banner (CivicPulse Proximity Adaptation) */}

@@ -24,6 +24,36 @@ function MainLayout() {
   const [selectedRequestId, setSelectedRequestId] = useState(null);
   const [prefilledAssetCode, setPrefilledAssetCode] = useState(null);
 
+  // History stack for genuine "Back" navigation
+  const [historyStack, setHistoryStack] = useState([]);
+
+  const pushHistory = (stateSnapshot) => {
+    setHistoryStack((prev) => [...prev, stateSnapshot]);
+  };
+
+  const goBack = () => {
+    if (historyStack.length > 0) {
+      const prev = historyStack[historyStack.length - 1];
+      setHistoryStack((prevStack) => prevStack.slice(0, -1));
+      setCurrentRoute(prev.currentRoute);
+      setActiveTab(prev.activeTab);
+      setSelectedRequestId(prev.selectedRequestId);
+      setPrefilledAssetCode(prev.prefilledAssetCode);
+      if (prev.currentRoute === 'portal') {
+        if (window.history.pushState) window.history.pushState({}, '', '/');
+      } else if (prev.currentRoute === 'ai_assistant') {
+        if (window.history.pushState) window.history.pushState({}, '', '/ai-assistant');
+      } else if (prev.currentRoute === 'login') {
+        if (window.history.pushState) window.history.pushState({}, '', `/login?role=${loginRole}`);
+      }
+    } else {
+      // If stack is empty, return safely to portal dashboard
+      setSelectedRequestId(null);
+      setCurrentRoute('portal');
+      if (window.history.pushState) window.history.pushState({}, '', '/');
+    }
+  };
+
   // Parse initial URL on mount and on popstate
   useEffect(() => {
     const handleUrlChange = () => {
@@ -50,6 +80,7 @@ function MainLayout() {
 
   // Helpers to push state and set view
   const navigateTo = (route, role = null, tab = null) => {
+    pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
     setSelectedRequestId(null);
     if (route === 'home' || route === 'portal') {
       setCurrentRoute('portal');
@@ -71,10 +102,12 @@ function MainLayout() {
   };
 
   const handleSelectRequest = (requestId) => {
+    pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
     setSelectedRequestId(requestId);
   };
 
   const handleReportForAsset = (assetCode) => {
+    pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
     setPrefilledAssetCode(assetCode);
     setCurrentRoute('other');
     setActiveTab('new_request');
@@ -88,7 +121,7 @@ function MainLayout() {
         onLoginSuccess={(roleKey, persona) => {
           navigateTo('portal', persona);
         }}
-        onGoHome={() => navigateTo('portal')}
+        onGoHome={goBack}
       />
     );
   }
@@ -97,8 +130,15 @@ function MainLayout() {
   if (currentRoute === 'ai_assistant') {
     return (
       <AIAssistantView
-        onBack={() => navigateTo('portal')}
+        onBack={goBack}
         onNavigateToReport={(assetCode) => handleReportForAsset(assetCode)}
+        onNavigateToRequest={(requestId) => handleSelectRequest(requestId)}
+        onNavigateToTab={(tab) => {
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+          setSelectedRequestId(null);
+          setCurrentRoute('other');
+          setActiveTab(tab);
+        }}
       />
     );
   }
@@ -109,10 +149,26 @@ function MainLayout() {
       <PortalDashboard
         onGoHome={() => navigateTo('portal')}
         onOpenAIAssistant={() => navigateTo('ai_assistant')}
-        onNewRequest={() => { setCurrentRoute('other'); setActiveTab('new_request'); }}
-        onOpenAnalytics={() => { setCurrentRoute('other'); setActiveTab('analytics'); }}
-        onOpenAssets={() => { setCurrentRoute('other'); setActiveTab('asset_management'); }}
-        onOpenTechs={() => { setCurrentRoute('other'); setActiveTab('technicians'); }}
+        onNewRequest={() => { 
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+          setCurrentRoute('other'); 
+          setActiveTab('new_request'); 
+        }}
+        onOpenAnalytics={() => { 
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+          setCurrentRoute('other'); 
+          setActiveTab('analytics'); 
+        }}
+        onOpenAssets={() => { 
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+          setCurrentRoute('other'); 
+          setActiveTab('asset_management'); 
+        }}
+        onOpenTechs={() => { 
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+          setCurrentRoute('other'); 
+          setActiveTab('technicians'); 
+        }}
         onSelectRequest={handleSelectRequest}
       />
     );
@@ -125,6 +181,7 @@ function MainLayout() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={(tab) => {
+          pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
           setSelectedRequestId(null);
           if (tab === 'home' || tab === 'portal') navigateTo('portal');
           else {
@@ -140,10 +197,7 @@ function MainLayout() {
         {selectedRequestId ? (
           <RequestDetail
             requestId={selectedRequestId}
-            onBack={() => {
-              setSelectedRequestId(null);
-              navigateTo('portal');
-            }}
+            onBack={goBack}
             onStatusUpdated={() => {}}
           />
         ) : (
@@ -155,21 +209,31 @@ function MainLayout() {
                   setPrefilledAssetCode(null);
                   handleSelectRequest(reqId);
                 }}
+                onCancel={goBack}
               />
             )}
 
             {activeTab === 'my_requests' && (
               <MyRequests
                 onSelectRequest={handleSelectRequest}
-                onNewRequest={() => setActiveTab('new_request')}
+                onNewRequest={() => {
+                  pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+                  setActiveTab('new_request');
+                }}
               />
             )}
 
             {activeTab === 'admin_dashboard' && (
               <AdminDashboard
-                onNavigate={(tab) => setActiveTab(tab)}
+                onNavigate={(tab) => {
+                  pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+                  setActiveTab(tab);
+                }}
                 onSelectRequest={handleSelectRequest}
-                onSelectAsset={() => setActiveTab('asset_management')}
+                onSelectAsset={() => {
+                  pushHistory({ currentRoute, activeTab, selectedRequestId, prefilledAssetCode });
+                  setActiveTab('asset_management');
+                }}
               />
             )}
 
@@ -212,10 +276,10 @@ function MainLayout() {
             Dept. of Computer Science & Business Systems • 2026–2027
           </div>
           <button
-            onClick={() => navigateTo('portal')}
-            className="text-blue-600 hover:underline font-bold"
+            onClick={goBack}
+            className="text-blue-600 hover:underline font-bold cursor-pointer"
           >
-            ← Back to VTOP Portal
+            ← Back to Previous View
           </button>
         </div>
       </footer>
@@ -223,10 +287,12 @@ function MainLayout() {
   );
 }
 
-export default function App() {
+export function App() {
   return (
     <AuthProvider>
       <MainLayout />
     </AuthProvider>
   );
 }
+
+export default App;

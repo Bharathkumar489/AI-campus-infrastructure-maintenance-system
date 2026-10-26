@@ -492,92 +492,6 @@ export function PortalDashboard({
         </div>
       </header>
 
-      {/* 2. Global Persona Switcher & Role Permission Bar */}
-      <div className="bg-white/80 backdrop-blur-md border-b border-black/[0.06] px-4 sm:px-6 py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-2xs">
-        <div className="flex items-center gap-3 flex-wrap">
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-            Persona View:
-          </span>
-          <div className="p-1 bg-slate-100 rounded-full border border-slate-200/60 inline-flex items-center gap-1 flex-wrap">
-            <button
-              onClick={() => { switchRole('student'); setActiveMenuTab('my_requests'); }}
-              className={`px-3.5 py-1 rounded-full text-xs font-semibold transition active:scale-95 flex items-center gap-1.5 cursor-pointer ${
-                currentUser?.role === 'requester' && (currentUser?.userType === 'student' || !currentUser?.userType)
-                  ? 'bg-white text-slate-900 shadow-2xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <span>🎓 Student</span>
-              {currentUser?.role === 'requester' && (currentUser?.userType === 'student' || !currentUser?.userType) && (
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-              )}
-            </button>
-
-            <button
-              onClick={() => { switchRole('staff'); setActiveMenuTab('my_requests'); }}
-              className={`px-3.5 py-1 rounded-full text-xs font-semibold transition active:scale-95 flex items-center gap-1.5 cursor-pointer ${
-                currentUser?.role === 'requester' && currentUser?.userType === 'faculty'
-                  ? 'bg-white text-slate-900 shadow-2xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <span>👨‍🏫 Faculty</span>
-              {currentUser?.role === 'requester' && currentUser?.userType === 'faculty' && (
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
-              )}
-            </button>
-
-            <button
-              onClick={() => { switchRole('admin'); setActiveMenuTab('admin_requests'); }}
-              className={`px-3.5 py-1 rounded-full text-xs font-semibold transition active:scale-95 flex items-center gap-1.5 cursor-pointer ${
-                currentUser?.role === 'admin'
-                  ? 'bg-white text-slate-900 shadow-2xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <span>🛡️ Admin</span>
-              {currentUser?.role === 'admin' && (
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
-              )}
-            </button>
-
-            <button
-              onClick={() => { switchRole('technician'); setActiveMenuTab('tech_tasks'); }}
-              className={`px-3.5 py-1 rounded-full text-xs font-semibold transition active:scale-95 flex items-center gap-1.5 cursor-pointer ${
-                currentUser?.role === 'technician'
-                  ? 'bg-white text-slate-900 shadow-2xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <span>🔧 Technician</span>
-              {currentUser?.role === 'technician' && (
-                <span className="w-1.5 h-1.5 rounded-full bg-purple-600"></span>
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* Role Permissions Scope Pill */}
-        <div className="flex items-center gap-2 text-[11px] self-start md:self-auto">
-          <span className="text-slate-400 font-medium">Active Scope:</span>
-          {currentUser?.role === 'admin' && (
-            <span className="font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-              Full Authority • Triage, Dispatch, Fleet & Weights
-            </span>
-          )}
-          {currentUser?.role === 'technician' && (
-            <span className="font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
-              Assigned Tasks Only • Start & Submit Evidence
-            </span>
-          )}
-          {currentUser?.role === 'requester' && (
-            <span className="font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">
-              View & Report Only • Lifecycle Tracking & Upvotes
-            </span>
-          )}
-        </div>
-      </div>
-
       {/* 3. Main Body: Collapsible VTOP Drawer + Workspace */}
       <div className="flex-1 flex overflow-hidden">
         
@@ -1482,37 +1396,6 @@ export function PortalDashboard({
                       </button>
                     </div>
                   </div>
-
-                  {/* Role-Specific Right Card 1: Requesters (Contribution & Reputation Card) */}
-                  {currentUser?.role === 'requester' && (
-                    <div className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent border border-amber-200 rounded-md p-4 space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-amber-900 flex items-center gap-1.5">
-                          <Award className="w-4 h-4 text-amber-600" /> Campus Guardian Tier
-                        </span>
-                        <span className="text-[11px] font-mono font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">
-                          ⭐ 150 PTS
-                        </span>
-                      </div>
-                      <p className="text-xs text-slate-600">
-                        You have contributed to campus safety by reporting and verifying defect repairs.
-                      </p>
-                      <div className="text-[11px] text-slate-500 space-y-1 bg-white/70 p-2.5 rounded border border-amber-100">
-                        <div className="flex justify-between">
-                          <span>Report Valid Fault:</span>
-                          <span className="font-bold text-amber-700">+10 PTS</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Verify Completed Repair:</span>
-                          <span className="font-bold text-amber-700">+15 PTS</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Upvote Existing Issue:</span>
-                          <span className="font-bold text-amber-700">+5 PTS</span>
-                        </div>
-                      </div>
-                    </div>
-                  )}
 
                   {/* Role-Specific Right Card 2: Field Technician Scorecard */}
                   {currentUser?.role === 'technician' && (

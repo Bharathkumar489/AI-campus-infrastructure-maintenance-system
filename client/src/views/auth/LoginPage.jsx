@@ -116,9 +116,15 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
     setError('');
 
     // If user entered captcha, check match (case-insensitive for good UX)
-    if (captchaInput.trim() && captchaInput.trim().toUpperCase() !== captchaText) {
-      setError('Captcha entered does not match. Please try again.');
+    const sanitized = captchaInput.trim().toUpperCase();
+    if (!sanitized) {
+      setError('Please enter the CAPTCHA code shown in the box.');
+      return;
+    }
+    if (sanitized !== captchaText.toUpperCase()) {
+      setError('Incorrect CAPTCHA entered. Please enter matching letters/numbers.');
       setCaptchaText(generateRandomCaptcha());
+      setCaptchaInput('');
       return;
     }
 
@@ -258,7 +264,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                 <input
                   type="text"
                   value={captchaInput}
-                  onChange={(e) => setCaptchaInput(e.target.value)}
+                  onChange={(e) => setCaptchaInput(e.target.value.toUpperCase())}
                   placeholder="ENTER CAPTCHA (A-Z, 0-9)"
                   className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded text-xs text-slate-800 focus:outline-none focus:border-blue-500 pr-10 uppercase font-mono"
                 />
