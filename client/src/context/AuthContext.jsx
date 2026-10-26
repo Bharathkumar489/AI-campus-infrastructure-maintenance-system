@@ -80,8 +80,8 @@ const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(() => {
-    const saved = localStorage.getItem('agy_campus_user');
-    return saved ? JSON.parse(saved) : PRESET_USERS.admin; // Default to Admin for full inspection
+    // Open login page first on fresh session
+    return null;
   });
 
   const [notificationCount, setNotificationCount] = useState(0);

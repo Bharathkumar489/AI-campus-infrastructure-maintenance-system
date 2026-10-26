@@ -18,7 +18,7 @@ function MainLayout() {
   const { currentUser, switchRole } = useAuth();
   
   // Navigation states - Default directly to PortalDashboard
-  const [currentRoute, setCurrentRoute] = useState('portal'); // 'portal' | 'login' | 'ai_assistant' | 'other'
+  const [currentRoute, setCurrentRoute] = useState('login'); // 'portal' | 'login' | 'ai_assistant' | 'other'
   const [loginRole, setLoginRole] = useState('student');
   const [activeTab, setActiveTab] = useState('portal'); // for internal sub-views
   const [selectedRequestId, setSelectedRequestId] = useState(null);
@@ -114,7 +114,7 @@ function MainLayout() {
   };
 
   // 1. Dedicated LoginPage
-  if (currentRoute === 'login') {
+  if (currentRoute === 'login' || !currentUser) {
     return (
       <LoginPage
         role={loginRole}
