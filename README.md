@@ -12,25 +12,72 @@ This system provides a centralized digital platform that links maintenance compl
 
 ---
 
+## 📂 Multi-Tier Folder Architecture
+
+The project is structured into 4 decoupled, easy-to-visualize architectural tiers:
+
+```
+UM/
+├── frontend/               # 🎨 1. Presentation Tier (React 18, Vite, Tailwind CSS)
+│   ├── src/                # VTOP Portal, Login, Views, Context, Components
+│   ├── public/             # Static institutional assets, logos
+│   └── package.json        # Frontend dependencies & build scripts
+│
+├── middle/                 # ⚙️ 2. Middleware Pipeline (Request security & processing)
+│   ├── authMiddleware.js   # JWT token verification & Role-Based Access Control
+│   ├── uploadMiddleware.js # Multer image sanitization & 10MB limit enforcement
+│   ├── validateMiddleware.js # Input payload verification (tickets, ratings)
+│   ├── errorMiddleware.js  # Centralized error handler & JSON formatting
+│   ├── loggerMiddleware.js # HTTP request telemetry & timing logger
+│   └── index.js            # Combined middleware export
+│
+├── api/                    # 🔌 3. API Tier (REST Controllers & Route Definitions)
+│   ├── auth.js             # User authentication (/api/auth/login, /register)
+│   ├── requests.js         # Maintenance tickets (create, update, delete, upvote)
+│   ├── assets.js           # Campus equipment inventory & health telemetry
+│   ├── assignments.js      # Technician work order dispatch
+│   ├── technicians.js      # Field staff roster & availability management
+│   ├── feedback.js         # 5-star ratings & user verification feedback
+│   ├── notifications.js    # System alert notifications
+│   ├── analytics.js        # KPI summary metrics & failure charts
+│   ├── ml.js               # ML predictions & NLP category classification
+│   └── index.js            # Master Express router mounting all /api endpoints
+│
+└── backend/                # 🖥️ 4. Backend Server Tier (Server setup, DB & ML Engine)
+    ├── db/                 # SQLite database (sql.js), schema.sql, seed.js
+    ├── ml/                 # Random Forest failure models & priority engine
+    ├── uploads/            # Defect photos & work order completion evidence
+    ├── server.js           # Express application configuration & tier binding
+    ├── index.js            # Main backend server entry point (Port 5000)
+    └── test_all.js         # Automated 16/16 test case verification suite
+```
+
+---
+
 ## 🏛️ System Architecture
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                          USER INTERFACE                                │
+│                        1. FRONTEND TIER (frontend/)                    │
 │       Student / Faculty        Admin Console        Field Technician   │
 └────────────────────────────────────┬───────────────────────────────────┘
-                                     │ REST / Multipart API
+                                     │ REST / Multipart HTTP
 ┌────────────────────────────────────▼───────────────────────────────────┐
-│                        APPLICATION LAYER (Express)                     │
-│  Auth & RBAC • Request Lifecycle • Smart Dispatch • Evidence Storage   │
+│                        2. MIDDLE TIER (middle/)                        │
+│   Request Logger • JWT & RBAC Auth • Multer Image Upload • Validation  │
+└────────────────────────────────────┬───────────────────────────────────┘
+                                     │ Filtered & Verified Requests
+┌────────────────────────────────────▼───────────────────────────────────┐
+│                        3. API TIER (api/)                              │
+│   Auth • Requests • Assets • Assignments • Technicians • Feedback • ML │
 └───────────────┬────────────────────┬────────────────────┬──────────────┘
                 │                    │                    │
 ┌───────────────▼────────┐  ┌────────▼─────────┐  ┌───────▼──────────────┐
-│   AI & DECISION LAYER  │  │    DATA LAYER    │  │ ANALYTICS & REPORTS  │
+│  4. BACKEND & ML TIER  │  │    DATA LAYER    │  │ ANALYTICS & REPORTS  │
 │ • Random Forest 30d RF │  │ • Users & Roles  │  │ • MTTR & SLA Trends  │
 │ • Priority Engine      │  │ • Assets & History│ │ • Risk Distribution  │
 │ • NLP Problem Classif. │  │ • Work Orders    │  │ • Workload Heatmaps  │
-│ • Technician Matcher   │  │ • Feedback & Proof│ │ • CSV / PDF Reports  │
+│ • Technician Matcher   │  │ • SQLite DB file │  │ • CSV / PDF Reports  │
 └────────────────────────┘  └──────────────────┘  └──────────────────────┘
 ```
 
@@ -42,30 +89,42 @@ This system provides a centralized digital platform that links maintenance compl
 - Node.js (v18 or higher)
 - Web Browser (Chrome, Edge, Firefox)
 
-### 2. Run the Application
-Simply double-click **`run.bat`** or run in your terminal:
+### 2. Available Commands
 ```bash
-node server/index.js
-```
-Then open your browser at **[http://localhost:5000](http://localhost:5000)**.
+# Start the full application backend server & interface
+npm start
 
-*Both the REST backend API and the responsive React user interface are served together on port 5000.*
+# Run the backend server directly
+npm run backend
+
+# Run the frontend development server
+npm run frontend
+
+# Build production bundle
+npm run build
+
+# Run automated system verification test suite (16/16 Test Cases)
+npm test
+```
+
+### 3. One-Click Windows Launch
+Simply double-click **`run.bat`** to start the backend server and automatically open the application at **[http://localhost:5000](http://localhost:5000)**.
 
 ---
 
 ## 👥 Multi-Role User Personas & Test Credentials
 
-The system includes a quick **Role Switcher** in the top navigation bar to test all personas with a single click:
+The system includes pre-registered student and administrator accounts with one-click quick selection on the login page:
 
-| Role | User Account | Department | Responsibilities |
-|---|---|---|---|
-| **Administrator** | `admin@campus.edu` | Facilities Office | Triage tickets, inspect AI failure risks, dispatch technicians, manage campus asset database. |
-| **Student / Requester** | `student@campus.edu` | CSBS Student | Submit maintenance complaints, upload defect photos, track progress, verify repairs, provide ratings. |
-| **Faculty / Staff** | `faculty@campus.edu` | CSE Faculty | Report classroom/lab equipment issues, view status alerts. |
-| **Field Technician** | `tech.rajesh@campus.edu` | HVAC Services | View assigned work orders, accept tasks, update status to "In Progress", upload completion evidence. |
-| **Campus Director** | `director@campus.edu` | Management | Review executive KPI dashboards, first-time fix rates, asset reliability, and export audit reports. |
+| Role | Name (User Name) | Registration No. (Password) | User ID | Responsibilities |
+|---|---|---|---|---|
+| **Student** | **Bharath** | **`24bcb7220`** | `usr-stu-24bcb7220` | Submit complaints, upload defect photos, track tickets, rate repairs. |
+| **Student** | **Abhiram** | **`24bcb7251`** | `usr-stu-24bcb7251` | Submit complaints, view status, upvote campus defects. |
+| **Student** | **Aaron** | **`24bcb7053`** | `usr-stu-24bcb7053` | Departmental defect reporting, track resolution times. |
+| **Student** | **Balaji** | **`24bcb7266`** | `usr-stu-24bcb7266` | Classroom & lab equipment issue reporting. |
+| **Admin & Student** | **Koushik** | **`24bcb7230`** | `usr-admin-24bcb7230` | Triage queue, AI failure inspection, technician dispatch desk. |
 
-*(Default password for all accounts is `campus123`)*
+*(Demo faculty `STF8820` and technician `TECH01` passwords are `password123`)*
 
 ---
 
@@ -92,7 +151,7 @@ You can test the exact benchmark scenario described in **Appendix C** of the pro
    - Switch role to **Field Technician**.
    - View the new task under **Assigned Tasks**.
    - Click **Accept Work Order** $\rightarrow$ Click **Begin Work (On-Site)**.
-   - Click **Complete & Submit Evidence**, enter repair notes (e.g. *replaced defective run capacitor 45uF and recharged refrigerant*), upload proof, and submit.
+   - Click **Complete & Submit Evidence**, enter repair notes, upload proof, and submit.
 5. **Requester Verification & Feedback**:
    - Switch back to **Student / Requester**.
    - Open the ticket under **My Requests**.
@@ -114,48 +173,3 @@ $$\text{Priority Score} = 0.4 \times \text{Severity} + 0.3 \times \text{Failure 
 - **LOW Risk**: $0\% - 39\%$ (Nominal state; standard monitoring)
 - **MEDIUM Risk**: $40\% - 69\%$ (Inspect history; schedule preventive servicing)
 - **HIGH Risk**: $70\% - 100\%$ (Immediate review and corrective maintenance required)
-
----
-
-## 🎓 Viva & Presentation Questions (Appendix D)
-
-### 1. What problem does the system solve?
-Conventional campus maintenance is reactive—problems are only addressed after equipment fails, resulting in classroom interruptions, high repair costs, repeated complaints, and uncoordinated technician scheduling. This system introduces predictive maintenance using AI to estimate failure probability before total breakdown occurs, while automating prioritization and technician dispatch.
-
-### 2. Why is predictive maintenance useful for a campus?
-Educational institutions operate on rigid academic calendars with high asset utilization (labs, lecture halls, hostels). Unexpected equipment downtime disrupts lectures, exams, and experiments. Predictive maintenance enables facilities teams to service degrading equipment during off-hours, extending equipment lifespans and reducing emergency repair costs.
-
-### 3. What is the difference between failure risk and maintenance priority?
-- **Failure Risk** is an objective statistical probability (0 to 1) estimating how likely an asset is to fail based on historical wear, age, and maintenance intervals.
-- **Maintenance Priority** is an operational urgency score determining how rapidly technicians must respond. A high-risk air conditioner in an unoccupied storage room has lower priority than a moderately risky AC in a server room or active laboratory.
-
-### 4. Why was Random Forest selected?
-Random Forest handles nonlinear relationships between tabular features (age, duty cycle, days since service), is robust against overfitting compared to individual decision trees, works well with mixed numeric and categorical data, and exposes feature importances for explainable AI.
-
-### 5. What is the target variable?
-The target variable is binary: `failure_next_30d` ($1 = \text{asset experienced a qualifying failure within 30 days}$, $0 = \text{no failure occurred}$).
-
-### 6. Which features are used for prediction?
-`asset_age_years`, `previous_failures`, `days_since_maintenance`, `maintenance_count_12m`, `complaints_30d`, `severity`, `usage_hours_day`, `asset_type`, and `location_criticality`.
-
-### 7. What is data leakage and how is it avoided?
-Data leakage occurs when features containing information from *after* the failure event (such as final repair duration, cost, or replaced components) are accidentally fed into the model during training. It is avoided by using a strict temporal cut-off: only data available at the moment of prediction is included.
-
-### 8. How is technician assignment performed?
-Using a rule-based multi-factor optimization:
-$$\text{Candidate Score} = 0.5 \times \text{Skill Match} + 0.3 \times \text{Availability} + 0.2 \times \text{Workload Capacity}$$
-Eligible technicians with the required trade skill are ranked by availability and lowest active workload.
-
----
-
-## 📊 Database Schema Summary
-
-- `users`: User authentication, roles (`requester`, `admin`, `technician`, `management`), department, contact.
-- `assets`: Physical infrastructure registry (`asset_code`, `building`, `location`, `installation_date`, `status`, `last_maintenance`, `usage_hours_day`, `criticality`, `previous_failures`).
-- `maintenance_requests`: Work order tickets with AI failure probability, risk band, priority score, status lifecycle, and image uploads.
-- `predictions`: Explainable AI diagnostic logs storing model version, probability, and feature contributions.
-- `technicians`: Personnel database with primary trades, cross-skills, availability, active workload, and customer ratings.
-- `assignments`: Dispatches linking requests to technicians with timestamps (`assigned_at`, `accepted_at`, `started_at`, `completed_at`) and completion evidence photos.
-- `feedback`: Customer ratings (1–5 stars) and verification comments.
-- `maintenance_history`: Immutable asset lifecycle log tracking past repairs, parts replaced, and technicians.
-- `model_versions`: Registry tracking machine learning model versions, accuracy, F1-scores, and training dates.

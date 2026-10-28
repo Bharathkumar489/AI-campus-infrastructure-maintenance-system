@@ -1,12 +1,12 @@
 @echo off
 echo =======================================================================
 echo    AI-BASED CAMPUS INFRASTRUCTURE MAINTENANCE SYSTEM
-echo    Predictive Maintenance ^& Work Order Management Platform
+echo    Multi-Tier Architecture: Frontend ^| Middle ^| API ^| Backend Server
 echo =======================================================================
 echo.
-echo Starting application server and interface...
+echo Starting application backend server and interface...
 echo.
 
 start "" http://localhost:5000
-node server/index.js
+node backend/index.js
 pause
