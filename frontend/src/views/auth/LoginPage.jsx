@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { User, Eye, EyeOff, Key, RotateCw, ArrowRight, Home, ShieldCheck, CheckCircle2, Sparkles, GraduationCap, Briefcase, Wrench, Shield, Check } from 'lucide-react';
 import { VitLogo } from '../../components/VitLogo';
-import { useAuth, STUDENT_DATABASE } from '../../context/AuthContext';
+import { useAuth, STUDENT_DATABASE, FACULTY_DATABASE, TECHNICIAN_DATABASE } from '../../context/AuthContext';
 
 function generateRandomCaptcha() {
   const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -14,9 +14,9 @@ function generateRandomCaptcha() {
 
 const ROLES = [
   { id: 'student', label: 'Student', icon: '🎓', defaultId: 'Bharath', defaultPass: '24bcb7220', title: 'Student portal access', desc: 'Raise requests & track tickets' },
-  { id: 'staff', label: 'Faculty', icon: '👨‍🏫', defaultId: 'STF8820', defaultPass: 'password123', title: 'Faculty & staff portal access', desc: 'Departmental defect reporting' },
+  { id: 'staff', label: 'Faculty', icon: '👨‍🏫', defaultId: 'Ananya', defaultPass: 'FAC10482', title: 'Faculty & staff portal access', desc: 'Departmental defect reporting' },
   { id: 'admin', label: 'Admin', icon: '🛡️', defaultId: 'Koushik', defaultPass: '24bcb7230', title: 'Admin operations & dispatch desk', desc: 'Triage queue & technician assignment' },
-  { id: 'technician', label: 'Technician', icon: '🔧', defaultId: 'TECH01', defaultPass: 'password123', title: 'Technician work order access', desc: 'Task execution & completion evidence' }
+  { id: 'technician', label: 'Technician', icon: '🔧', defaultId: 'Rajesh', defaultPass: 'TECH2041', title: 'Technician work order access', desc: 'Task execution & completion evidence' }
 ];
 
 export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
@@ -40,20 +40,20 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
       case 'employee':
         return {
           title: 'Faculty & staff portal access',
-          defaultId: 'STF8820',
-          defaultPass: 'password123',
+          defaultId: 'Ananya',
+          defaultPass: 'FAC10482',
           roleKey: 'staff',
           accent: 'border-t-[#d2af00]',
-          helperHint: 'Faculty demo login: STF8820 / password123'
+          helperHint: 'Faculty login: Username "Ananya" & Password "FAC10482"'
         };
       case 'technician':
         return {
           title: 'Technician work order access',
-          defaultId: 'TECH01',
-          defaultPass: 'password123',
+          defaultId: 'Rajesh',
+          defaultPass: 'TECH2041',
           roleKey: 'technician',
           accent: 'border-t-[#7c3aed]',
-          helperHint: 'Field technician login: TECH01 / password123'
+          helperHint: 'Technician login: Username "Rajesh" & Password "TECH2041"'
         };
       case 'student':
       default:
@@ -108,6 +108,24 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
     setCaptchaInput(captchaText);
     setError('');
     setInfoMessage(`Loaded ${student.name} (${student.registration_no}) credentials with password ready.`);
+  };
+
+  // Quick select a faculty member
+  const handleSelectFaculty = (faculty) => {
+    setLoginId(faculty.name.split(' ')[0]); // e.g. Ananya, Arvind, Meera
+    setPassword(faculty.registration_no);
+    setCaptchaInput(captchaText);
+    setError('');
+    setInfoMessage(`Loaded Faculty ${faculty.name} (${faculty.registration_no}) with password ready.`);
+  };
+
+  // Quick select a technician
+  const handleSelectTechnician = (tech) => {
+    setLoginId(tech.name.split(' ')[0]); // e.g. Rajesh, Vikram, Suresh
+    setPassword(tech.registration_no);
+    setCaptchaInput(captchaText);
+    setError('');
+    setInfoMessage(`Loaded Field Technician ${tech.name} (${tech.registration_no}) with password ready.`);
   };
 
   // Quick select an admin
@@ -262,7 +280,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
               </div>
             </div>
 
-            {/* Student Database Quick Select Panel */}
+            {/* 1. Student Database Quick Select Panel */}
             {selectedRole === 'student' && (
               <div className="mb-5 p-3 rounded-lg bg-blue-50/70 border border-blue-200">
                 <div className="flex items-center justify-between mb-2">
@@ -300,7 +318,83 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
               </div>
             )}
 
-            {/* Admin Database Quick Select Panel */}
+            {/* 2. Faculty Database Quick Select Panel */}
+            {selectedRole === 'staff' && (
+              <div className="mb-5 p-3 rounded-lg bg-amber-50/70 border border-amber-200">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+                    <Briefcase className="w-3.5 h-3.5 text-amber-700" />
+                    Faculty Database (Click to Auto-fill):
+                  </span>
+                  <span className="text-[10px] text-amber-700 font-semibold">Password = Employee Reg. No</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+                  {FACULTY_DATABASE.map((f) => {
+                    const isCurrent = loginId.toLowerCase() === f.name.toLowerCase() || loginId.toLowerCase() === f.registration_no.toLowerCase() || loginId.toLowerCase() === f.name.split(' ')[0].toLowerCase();
+                    return (
+                      <button
+                        key={f.user_id}
+                        type="button"
+                        onClick={() => handleSelectFaculty(f)}
+                        className={`px-2.5 py-1.5 rounded text-left border transition text-xs flex flex-col cursor-pointer active:scale-95 ${
+                          isCurrent
+                            ? 'bg-amber-600 text-white border-amber-700 shadow-xs'
+                            : 'bg-white hover:bg-amber-100/60 text-slate-700 border-amber-200'
+                        }`}
+                      >
+                        <span className="font-bold flex items-center justify-between">
+                          {f.name}
+                          {isCurrent && <Check className="w-3 h-3 text-white" />}
+                        </span>
+                        <span className={`text-[10px] font-mono ${isCurrent ? 'text-amber-100' : 'text-amber-700'}`}>
+                          {f.registration_no}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* 3. Technician Database Quick Select Panel */}
+            {selectedRole === 'technician' && (
+              <div className="mb-5 p-3 rounded-lg bg-purple-50/70 border border-purple-200">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-purple-900 flex items-center gap-1.5">
+                    <Wrench className="w-3.5 h-3.5 text-purple-700" />
+                    Technician Database (Click to Auto-fill):
+                  </span>
+                  <span className="text-[10px] text-purple-700 font-semibold">Password = Tech Reg. No</span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+                  {TECHNICIAN_DATABASE.map((t) => {
+                    const isCurrent = loginId.toLowerCase() === t.name.toLowerCase() || loginId.toLowerCase() === t.registration_no.toLowerCase() || loginId.toLowerCase() === t.name.split(' ')[0].toLowerCase();
+                    return (
+                      <button
+                        key={t.user_id}
+                        type="button"
+                        onClick={() => handleSelectTechnician(t)}
+                        className={`px-2.5 py-1.5 rounded text-left border transition text-xs flex flex-col cursor-pointer active:scale-95 ${
+                          isCurrent
+                            ? 'bg-purple-600 text-white border-purple-700 shadow-xs'
+                            : 'bg-white hover:bg-purple-100/60 text-slate-700 border-purple-200'
+                        }`}
+                      >
+                        <span className="font-bold flex items-center justify-between">
+                          {t.name}
+                          {isCurrent && <Check className="w-3 h-3 text-white" />}
+                        </span>
+                        <span className={`text-[10px] font-mono ${isCurrent ? 'text-purple-100' : 'text-purple-700'}`}>
+                          {t.registration_no} ({t.skill?.split(' ')[0]})
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* 4. Admin Database Quick Select Panel */}
             {selectedRole === 'admin' && (
               <div className="mb-5 p-3 rounded-lg bg-emerald-50/70 border border-emerald-200">
                 <div className="flex items-center justify-between mb-2">
@@ -310,7 +404,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                   </span>
                   <span className="text-[10px] text-emerald-700 font-semibold">Password = 24bcb7230</span>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 gap-2">
                   <button
                     type="button"
                     onClick={() => handleSelectAdmin('Koushik', '24bcb7230')}
@@ -321,28 +415,11 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                     }`}
                   >
                     <span className="font-bold flex items-center justify-between">
-                      Koushik (Admin)
+                      Koushik (Administrator)
                       {(loginId.toLowerCase() === 'koushik' || loginId.toLowerCase() === '24bcb7230') && <Check className="w-3.5 h-3.5 text-white" />}
                     </span>
                     <span className={`text-[10px] font-mono ${(loginId.toLowerCase() === 'koushik' || loginId.toLowerCase() === '24bcb7230') ? 'text-emerald-100' : 'text-emerald-700'}`}>
-                      User: Koushik / Reg: 24bcb7230
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => handleSelectAdmin('ADM001', 'password123')}
-                    className={`px-3 py-2 rounded text-left border transition text-xs flex flex-col cursor-pointer active:scale-95 ${
-                      loginId.toUpperCase() === 'ADM001'
-                        ? 'bg-emerald-700 text-white border-emerald-800 shadow-xs'
-                        : 'bg-white hover:bg-emerald-100/60 text-slate-700 border-emerald-300'
-                    }`}
-                  >
-                    <span className="font-bold flex items-center justify-between">
-                      Dr. Sarah Jenkins
-                      {loginId.toUpperCase() === 'ADM001' && <Check className="w-3.5 h-3.5 text-white" />}
-                    </span>
-                    <span className={`text-[10px] font-mono ${loginId.toUpperCase() === 'ADM001' ? 'text-emerald-100' : 'text-emerald-700'}`}>
-                      ID: ADM001
+                      User ID: Koushik • Password: 24bcb7230
                     </span>
                   </button>
                 </div>
@@ -370,7 +447,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                   <label className="text-[11px] font-semibold text-slate-600 block">
                     Username / Registration No.
                   </label>
-                  <span className="text-[10px] text-slate-400">e.g. Bharath or 24bcb7220</span>
+                  <span className="text-[10px] text-slate-400">e.g. Name or Reg. Number</span>
                 </div>
                 <div className="relative">
                   <input
@@ -378,7 +455,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                     required
                     value={loginId}
                     onChange={handleLoginIdChange}
-                    placeholder="Enter Name or Reg No (e.g. Bharath, 24bcb7220)"
+                    placeholder="Enter Name or Reg No (e.g. Ananya, Rajesh, FAC10482)"
                     className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded text-xs text-slate-800 focus:outline-none focus:border-blue-500 pr-10 font-medium"
                   />
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-blue-500">
@@ -393,7 +470,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                   <label className="text-[11px] font-semibold text-slate-600 block">
                     Password
                   </label>
-                  <span className="text-[10px] text-slate-400">Registration number for students</span>
+                  <span className="text-[10px] text-slate-400">Registration / Employee number</span>
                 </div>
                 <div className="relative">
                   <input
@@ -401,7 +478,7 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Enter Registration No. (e.g. 24bcb7220)"
+                    placeholder="Enter Registration No."
                     className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded text-xs text-slate-800 focus:outline-none focus:border-blue-500 pr-10 tracking-widest font-mono"
                   />
                   <button
@@ -484,14 +561,14 @@ export function LoginPage({ role = 'student', onLoginSuccess, onGoHome }) {
               <div className="flex flex-col gap-1 text-blue-600">
                 <button
                   type="button"
-                  onClick={() => setInfoMessage('For students, password is your Registration Number. For Admin Koushik, password is "24bcb7230".')}
+                  onClick={() => setInfoMessage('Default password for all users is their Registration / Employee Number.')}
                   className="hover:underline text-left cursor-pointer"
                 >
                   Forgot Password?
                 </button>
                 <button
                   type="button"
-                  onClick={() => setInfoMessage('Your username is your Name (e.g. Bharath) or Registration No. (e.g. 24bcb7220).')}
+                  onClick={() => setInfoMessage('Username is your Name or Registration No. (e.g. Ananya, Rajesh, FAC10482, TECH2041).')}
                   className="hover:underline text-left cursor-pointer"
                 >
                   Forgot LoginId?

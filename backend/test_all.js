@@ -31,8 +31,8 @@ async function runTests() {
   await initDB();
 
   // TC-01: Valid login
-  const adminUser = get('SELECT * FROM users WHERE email = ?', ['admin@campus.edu']);
-  const passMatch = adminUser && bcrypt.compareSync('campus123', adminUser.password_hash);
+  const adminUser = get('SELECT * FROM users WHERE user_id = ?', ['Koushik']);
+  const passMatch = adminUser && bcrypt.compareSync('24bcb7230', adminUser.password_hash);
   assert(passMatch && adminUser.role === 'admin', 'TC-01', 'Valid login returns user profile and admin role');
 
   // TC-02: Invalid login
@@ -51,7 +51,7 @@ async function runTests() {
   assert(sampleReq && sampleReq.image_url && sampleReq.image_url.length > 0, 'TC-05', 'Image attachment linked and stored with request record');
 
   // TC-06: Role permissions
-  const studentUser = get('SELECT * FROM users WHERE email = ?', ['student@campus.edu']);
+  const studentUser = get('SELECT * FROM users WHERE user_id = ?', ['Bharath']);
   const isStudentAdmin = studentUser.role === 'admin';
   assert(!isStudentAdmin && studentUser.role === 'requester', 'TC-06', 'Role-based access distinguishes requesters from administrators');
 

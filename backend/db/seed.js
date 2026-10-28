@@ -34,11 +34,13 @@ async function seedDatabase() {
     { id: 'usr-stu-24bcb7053', name: 'Aaron', regNo: '24bcb7053', email: 'aaron@campus.edu', role: 'requester', dept: 'Computer Science & Engineering', phone: '+91 98765 72053' },
     { id: 'usr-stu-24bcb7266', name: 'Balaji', regNo: '24bcb7266', email: 'balaji@campus.edu', role: 'requester', dept: 'Computer Science & Engineering', phone: '+91 98765 72266' },
     { id: 'usr-student-1', name: 'Rohan Sharma', email: 'student@campus.edu', role: 'requester', dept: 'Computer Science & Business Systems', phone: '+91 98765 11111' },
-    { id: 'usr-faculty-1', name: 'Prof. Ananya Roy', email: 'faculty@campus.edu', role: 'requester', dept: 'Computer Science & Engineering', phone: '+91 98765 22222' },
+    { id: 'usr-fac-10482', name: 'Ananya Roy', regNo: 'FAC10482', email: 'ananya.roy@campus.edu', role: 'requester', dept: 'Computer Science & Engineering', phone: '+91 98765 10482' },
+    { id: 'usr-fac-10835', name: 'Arvind Swaminathan', regNo: 'FAC10835', email: 'arvind.swaminathan@campus.edu', role: 'requester', dept: 'Electronics & Communication Engineering', phone: '+91 98765 10835' },
+    { id: 'usr-fac-10964', name: 'Meera Nambiar', regNo: 'FAC10964', email: 'meera.nambiar@campus.edu', role: 'requester', dept: 'Mechanical Engineering & Design', phone: '+91 98765 10964' },
     { id: 'usr-staff-1', name: 'Kavita Sundaram', email: 'staff@campus.edu', role: 'requester', dept: 'Library Administration', phone: '+91 98765 33333' },
-    { id: 'usr-tech-1', name: 'Rajesh Kumar', email: 'tech.rajesh@campus.edu', role: 'technician', dept: 'HVAC Services', phone: '+91 98765 44441' },
-    { id: 'usr-tech-2', name: 'Vikram Patel', email: 'tech.vikram@campus.edu', role: 'technician', dept: 'Electrical Engineering Division', phone: '+91 98765 44442' },
-    { id: 'usr-tech-3', name: 'Suresh Reddy', email: 'tech.suresh@campus.edu', role: 'technician', dept: 'Plumbing & Water Works', phone: '+91 98765 44443' },
+    { id: 'usr-tech-2041', name: 'Rajesh Kumar', regNo: 'TECH2041', email: 'tech.rajesh@campus.edu', role: 'technician', dept: 'HVAC Services', phone: '+91 98765 44441' },
+    { id: 'usr-tech-2052', name: 'Vikram Patel', regNo: 'TECH2052', email: 'tech.vikram@campus.edu', role: 'technician', dept: 'Electrical Engineering Division', phone: '+91 98765 44442' },
+    { id: 'usr-tech-2063', name: 'Suresh Reddy', regNo: 'TECH2063', email: 'tech.suresh@campus.edu', role: 'technician', dept: 'Plumbing & Water Works', phone: '+91 98765 44443' },
     { id: 'usr-tech-4', name: 'Anil Verma', email: 'tech.anil@campus.edu', role: 'technician', dept: 'Civil Infrastructure & Carpentry', phone: '+91 98765 44444' },
     { id: 'usr-tech-5', name: 'Deepak Joshi', email: 'tech.deepak@campus.edu', role: 'technician', dept: 'Security & CCTV Systems', phone: '+91 98765 44445' },
     { id: 'usr-mgmt-1', name: 'Dr. K. Ramanathan', email: 'director@campus.edu', role: 'management', dept: 'Office of the Director', phone: '+91 98765 99999' }
@@ -53,9 +55,9 @@ async function seedDatabase() {
 
   // 2. Seed Technicians
   const technicians = [
-    { id: 'T01', user_id: 'usr-tech-1', name: 'Rajesh Kumar', skill: 'HVAC Maintenance', sec: 'Electrical, Ventilation', avail: 'Available', workload: 1, contact: '+91 98765 44441', rating: 4.85 },
-    { id: 'T02', user_id: 'usr-tech-2', name: 'Vikram Patel', skill: 'Electrical Maintenance', sec: 'Elevators, Panels, Generators', avail: 'Busy', workload: 3, contact: '+91 98765 44442', rating: 4.92 },
-    { id: 'T03', user_id: 'usr-tech-3', name: 'Suresh Reddy', skill: 'Plumbing & Water Systems', sec: 'Sewage Pumps, Drainage', avail: 'Available', workload: 0, contact: '+91 98765 44443', rating: 4.78 },
+    { id: 'T01', user_id: 'usr-tech-2041', name: 'Rajesh Kumar', skill: 'HVAC Maintenance', sec: 'Electrical, Ventilation', avail: 'Available', workload: 1, contact: '+91 98765 44441', rating: 4.85 },
+    { id: 'T02', user_id: 'usr-tech-2052', name: 'Vikram Patel', skill: 'Electrical Maintenance', sec: 'Elevators, Panels, Generators', avail: 'Busy', workload: 3, contact: '+91 98765 44442', rating: 4.92 },
+    { id: 'T03', user_id: 'usr-tech-2063', name: 'Suresh Reddy', skill: 'Plumbing & Water Systems', sec: 'Sewage Pumps, Drainage', avail: 'Available', workload: 0, contact: '+91 98765 44443', rating: 4.78 },
     { id: 'T04', user_id: 'usr-tech-4', name: 'Anil Verma', skill: 'Civil Maintenance & Masonry', sec: 'Carpentry, Furniture Repair', avail: 'Available', workload: 1, contact: '+91 98765 44444', rating: 4.65 },
     { id: 'T05', user_id: 'usr-tech-5', name: 'Deepak Joshi', skill: 'Security & Access Systems', sec: 'CCTV, Biometrics, IT Networks', avail: 'Available', workload: 1, contact: '+91 98765 44445', rating: 4.90 }
   ];
