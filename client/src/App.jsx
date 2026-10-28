@@ -85,6 +85,7 @@ function MainLayout() {
     if (route === 'home' || route === 'portal') {
       setCurrentRoute('portal');
       const targetRole = role || (currentUser?.role === 'admin' ? 'admin' : currentUser?.role === 'technician' ? 'technician' : 'student');
+      if (role) switchRole(role);
       if (tab) setActiveTab(tab);
       if (window.history.pushState) window.history.pushState({}, '', `/`);
     } else if (route === 'login') {
@@ -119,7 +120,9 @@ function MainLayout() {
       <LoginPage
         role={loginRole}
         onLoginSuccess={(roleKey, persona) => {
-          navigateTo('portal', persona);
+          const target = persona || roleKey || 'student';
+          switchRole(target);
+          navigateTo('portal', target);
         }}
         onGoHome={() => {
           if (!currentUser) switchRole('student');
